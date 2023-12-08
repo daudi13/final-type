@@ -27,40 +27,19 @@ export default function Home() {
           {
             data.map((item) => (
             <div className={styles.valueIconBox} key={item.id}>
-                <div className={styles.iconBox}>
+                <div className={styles.iconBox} style={{backgroundColor: `${item.color}`}}>
                   <div className={styles.imageBox}>
                       <Image src={item.img} fill className={styles.groupImg} alt="icons" />
                   </div>
               </div>
-              <h4 className={styles.valueIconTitle}>Tech-savvy</h4>
-              <p className={styles.valueIconText}>Ready to shine in tech & product roles</p>
+                <h4 className={styles.valueIconTitle}>{item.title}</h4>
+                <p className={styles.valueIconText}>{item.desc}</p>
             </div>
             ))
           }
-            {/* <div className={styles.valueIconBox}>
-              <div className={`${styles.iconBox} ${styles.iconYellow}`}>
-              <Image src={Message} className={styles.groupImg} alt="group" />
-              </div>
-              <h4 className={styles.valueIconTitle}>Tech-savvy</h4>
-              <p className={styles.valueIconText}>Seamless collaboration with global teams</p>
-            </div> */}
-            {/* <div className={styles.valueIconBox}>
-              <div className={`${styles.iconBox} ${styles.iconBlue}`}>
-              <Image src={Global} className={styles.groupImg} alt="group" />
-              </div>
-              <h4 className={styles.valueIconTitle}>Tech-savvy</h4>
-              <p className={styles.valueIconText}>Ready to shne in tech & product roles</p>
-            </div> */}
-            {/* <div className={styles.valueIconBox}>
-              <div className={`${styles.iconBox} ${styles.iconYellow}`}>
-              <Image src={cost} className={styles.groupImg} alt="group" />
-              </div>
-              <h4 className={styles.valueIconTitle}>Tech-savvy</h4>
-              <p className={styles.valueIconText}>Affordable for teams at any size</p>
-            </div> */}
           </div>
         </div>
-        {/* <div className={styles.meetOurTeam}>
+        <div className={styles.meetOurTeam}>
           <h2 className={styles.meetOurTeamTitle}>Meet our Team</h2>
           <iframe src="https://player.vimeo.com/video/835781373?h=b24e1c23b9" width="2120" height="515"  frameBorder="0" allow="autoplay; picture-in-picture" allowFullScreen></iframe>
           <p className={styles.meetOurTeamText}>Curious to see who could be joining the slack on Monday?</p>
@@ -70,8 +49,10 @@ export default function Home() {
           <h2 className={styles.socialProofTitle}>Trusted By</h2>
           <div className={styles.logos}>
             {
-              data.map((img, index) => (
-                <Image src={img} key={index} className={styles.logoImg} alt="img" />
+            logos.map((logo, index) => (
+                <div className={styles.imageBox}>
+                  <Image src={logo} key={index} fill className={styles.logoImg} alt="img" />
+                </div>
               ))
             }
           </div>
@@ -87,7 +68,9 @@ export default function Home() {
                   <p className={styles.whyUsText}>{item.content}</p>
                   <Link href={item.hrefLink} className={`${item.activeBtn ? styles.active : styles.btn}`}>{item.linkName}</Link>
                 </div>
-                <Image src={item.img} className={styles.imageCover} alt='item' />
+                <div className={styles.imageBox}>
+                  <Image src={item.img} fill className={styles.imageCover} alt='item' />
+                </div>
               </div>
             ))
           }
@@ -96,13 +79,17 @@ export default function Home() {
           <h3 className={styles.happyTitle}>You could be this happy</h3>
           <div className={styles.happyCard}>
             {
-              cards.map((item, index) => (
+              cards.map((item) => (
 
-                <div key={index} className={styles.cardBox}>
-                  <Image src={item.img} className={styles.image} alt="item"/>
+                <div key={item.id} className={styles.cardBox}>
+                  <div className={styles.imageBox}>
+                    <Image src={item.img} fill className={styles.image} alt="item"/>
+                  </div>
                   <p className={styles.content}>{item.content}</p>
                   <div className={styles.photoCutOut}></div>
-                  <Image src={item.img2} className={styles.quotes} alt="item"/>
+                  <div className={styles.imageBoxTwo}>
+                  <Image src={item.img2} fill className={styles.quotes} alt="item"/>
+                  </div>
                   <div className={styles.credentials}>
                     <p className={styles.name}>{item.managerName}</p>
                     <p className={styles.position}>{item.position}</p>
@@ -113,13 +100,15 @@ export default function Home() {
           </div>
           </div>
         <div className={styles.preFooter}>
-          <div className={styles.preFooterHero}>
-            <Image src={newGroup} alt="new"/>
+        <div className={styles.preFooterHero}>
+          <div className={styles.imageBox}>
+            <Image src="/Group108.png" className={styles.imageGroup} fill alt="new"/>
+          </div>
             <h3 className={styles.preFooterTitle}>Be a part of the movement</h3>
             <p className={styles.preFooterText}>Global equity starts with giving talented young people everywhere the chance to build meaningful careers.</p>
             <Link href="" className={styles.joinBtn}>Join Us</Link>
           </div>
-        </div> */}
+        </div>
     </main>
   )
 }

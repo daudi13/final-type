@@ -25,7 +25,7 @@ export const data: IData = [
     id: 2,
     title: "Fluent in English",
     img: "/message.svg",
-    desc: "Ready to shine in tech & product roles",
+    desc: "Excellent spoken & written communication",
     color: "#FFD478"
   },
   {
@@ -39,7 +39,7 @@ export const data: IData = [
     id: 4,
     title: "Cost-effective",
     img: "/wallet-add.svg",
-    desc: "Ready to shine in tech & product roles",
+    desc: "Affordable for teams at any size",
     color: "#FFD478"
   },
 ];
