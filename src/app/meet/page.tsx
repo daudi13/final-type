@@ -3,10 +3,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/Meet.module.scss"
 import { featuredProfiles, devTools, cards } from '../data/data'
+import { Open_Sans } from 'next/font/google';
+import HappyCards from '@/components/happycards/HappyCards'
+
+
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 const page = () => {
   return (
-    <main>
+    <main className={openSans.className}>
       <div className={styles.heroSection}>
         <div className={styles.heroTextSection}>
           <div className={styles.imageCover}>
@@ -95,7 +100,7 @@ const page = () => {
           }
         </div>
       </div>
-      {/* <div className={styles.tools}>
+      <div className={styles.tools}>
         <h2 className={styles.toolsHeader}>50+ tools and counting</h2>
         <div className={styles.toolsCapsuleWrapper}>
           {
@@ -104,27 +109,8 @@ const page = () => {
             ))
           }
         </div>
-      </div> */}
-      {/* <div style={{backgroundColor: "#F3FAFC",margin: 0, paddingTop: "5rem", paddingBottom: "5rem"}} className={styles.happy}>
-          <h3 className={styles.happyTitle}>What our clients have to say</h3>
-          <div className={styles.happyCard}>
-            {
-              cards.map((item, index) => (
-
-                <div key={index} className={styles.cardBox}>
-                  <Image src={item.img} className={styles.image} alt="item" />
-                  <p className={styles.content}>{item.content}</p>
-                  <div className={styles.photoCutOut}></div>
-                  <Image src={item.img2} className={styles.quotes} alt="item" />
-                  <div className={styles.credentials}>
-                    <p className={styles.name}>{item.managerName}</p>
-                    <p className={styles.position}>{item.position}</p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-      </div> */}
+      </div>
+      <HappyCards/>
       {/* <div className={styles.preFooterSection}>
         <div className={styles.preFooterSectionHero}>
           <Image src={group113} alt="vectors" />
