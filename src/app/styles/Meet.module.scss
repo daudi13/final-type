@@ -1,0 +1,347 @@
+.heroSection {
+  background-color: #f3fafc;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .heroTextSection {
+    padding-left: 290px;
+
+    .imageCover{
+      position: relative;
+      width: 73.09px;
+      height: 32.7px;
+
+      .img{
+        object-fit: contain;
+      }
+    }
+
+    .heroTextHeader {
+      font-family: 'Open sans', sans-serif;
+      font-weight: bolder;
+      font-size: 48px;
+      color: #166882;
+      line-height: 55.2px;
+    }
+
+    .heroTextDesc {
+      margin-top: 40px;
+      font-family: 'Open sans', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #000;
+      line-height: 29px;
+    }
+  }
+
+  .imageBoxTwo{
+    position: relative;
+    width: 895px;
+    height: 895px;
+
+    .heroImage {
+      object-fit: contain;
+    }
+  }
+
+  .imageBoxThree{
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    width: 280px;
+    height: 140px;
+
+    .heroCornerImage {
+      object-fit: contain;
+    }
+  }
+}
+
+
+
+.meetOurTeam {
+  background-color: #ffff;
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+
+  .tagLine{
+    text-align: center;
+  }
+
+  .imageBox{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .meetOurTeamMidImage {
+      object-fit: contain;
+    }
+  }
+
+}
+
+.featuredSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3FAFC;
+  padding-top: 91px;
+  padding-bottom: 161px;
+
+  .featuredSectionHeader{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Open sans', sans-serif;
+    color: #262543;
+    margin-bottom: 70px;
+  }
+
+  .featuredSectionColumn {
+    & > * + * {
+      margin-top: 120px;
+    }
+  }
+
+  .featuredWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 930px;
+    height: 500px;
+    flex-direction: column;
+
+  
+    .featuredDesc {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10000;
+      width: 900px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 30px;
+
+      .featuredImageBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px;
+
+        .imageBox{
+          position: relative;
+          width: 180px;
+          height: 180px;
+          
+          .userProfile {
+            object-fit: contain;
+            border-radius: 90px;
+            margin-bottom: 45px;
+          }
+        }
+        
+
+        .featuredUserName {
+          font-size: 20px;
+          font-weight: 600;
+          font-family: 'Open sans', sans-serif;
+          color: #ffff;
+        }
+
+        .featuredJobTitle {
+          font-size: 16px;
+          font-weight: 400;
+          font-family: 'Open sans', sans-serif;
+          color: #ffff;
+        }
+
+      }
+
+      .featuredUserProfile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        .featuredUserProfileTop{
+          display: flex;
+          justify-content: space-between;
+
+          .featuredUserProfileLeft {
+
+            & > * + * {
+              margin-top: 30px;
+            }
+
+          }
+        }
+        
+      }
+    }
+    
+  }
+  .profileKey {
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Open sans', sans-serif;
+  }
+
+  .profileValue {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Open sans', sans-serif;
+    color: #fff;
+  }
+
+  .featuredValue {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Open sans', sans-serif;
+    color: #fff;
+  }
+
+}
+
+.featuredProfileRight {
+  width: 50%;
+
+  .techCapsules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    
+
+    .featuredButtonSkill {
+      padding: 10px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      color: #000;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Open sans', sans-serif;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}
+
+.learnBtn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 2px solid #090b0e;
+  text-decoration: none;
+  font-size: 20px;
+  color: #090b0e;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #166882;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  .toolsHeader{
+    font-size: 35px;
+    font-family: 'Open sans', sans-serif;
+    color: #fff;
+    margin-bottom: 65px;
+    font-weight: 300;
+  }
+
+  .toolsCapsuleWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1320px;
+  
+    .devToolItem {
+      padding: 10px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      color: #000;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Open sans', sans-serif;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}
+
+.preFooterSection {
+  background-image: url("/morillo.png");
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .preFooterSectionHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    width: 35%;
+    height: 100%;
+    gap: 60px;
+
+    .preFooterHeroHeader{
+      font-family: 'Open sans', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .preFooterLinkBtn {
+      align-self: flex-start;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 30px;
+      font-size: 20px;
+      font-family: 'Open sans', sans-serif;
+      font-weight: 700;
+      background-color: #0E9AC0;
+    }
+  }
+}
+
+
+
+
