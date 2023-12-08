@@ -1,0 +1,56 @@
+export type IData = {
+  id: number,
+  title: string,
+  img: string,
+  desc: string,
+  color: string,
+}[];
+
+export type ILogos = string[];
+
+export type IData2 = {
+  id: number,
+  img: string,
+  title: string,
+  content: JSX.Element,
+  hrefLink: string,
+  linkName: string,
+  right: boolean,
+  activeBtn: boolean
+}[];
+
+export type ICards = {
+  id: number,
+  img: string,
+  img2: string,
+  content: string,
+  managerName: string,
+  position: string
+}[];
+
+export type IFeaturedProfiles = {
+  name: string,
+  job: string,
+  education: string,
+  companyHq: string,
+  hobbies: string,
+  img: string,
+  techSkills: string[],
+  profile: string,
+  card: string,
+  findLink: string,
+  fontColorwhite: boolean
+}[];
+
+export type IDevTools = string[];
+
+export type IAboutUs = {
+  id: number,
+  title: string,
+  content: string[],
+  getInTouchLink: string,
+  img1: string,
+  primaryImage: string,
+  absoluteImage: string,
+  right: boolean
+}[]
