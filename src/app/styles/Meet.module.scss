@@ -416,6 +416,16 @@
     width: 35%;
     height: 100%;
     gap: 60px;
+    
+    .imageCover{
+      position: relative;
+      height: 34px;
+      width: 78px;
+
+      .groupImg{
+        object-fit: contain;
+      }
+    }
 
     .preFooterHeroHeader{
       font-family: 'Open sans', sans-serif;

@@ -111,15 +111,17 @@ const page = () => {
         </div>
       </div>
       <HappyCards/>
-      {/* <div className={styles.preFooterSection}>
+      <div className={styles.preFooterSection}>
         <div className={styles.preFooterSectionHero}>
-          <Image src={group113} alt="vectors" />
+          <div className={styles.imageCover}>
+            <Image src="/Group113.png" alt="vectors" fill className={styles.groupImg} />
+          </div>
           <h3 className={styles.preFooterHeroHeader}>
             Build the team <br/> you&apos;ve always wanted
           </h3>
           <Link href="/contact" className={styles.preFooterLinkBtn}>Get in touch</Link>
         </div>
-      </div> */}
+      </div>
     </main>
   )
 }
