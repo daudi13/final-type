@@ -152,7 +152,7 @@
 }
 
 .roleSection {
-  height: 756px;
+  height: 456px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -218,10 +218,16 @@
     }
   }
 
+  .imageCover{
+    position: relative;
+    width: 663px;
+    height: 491px;
+
     .prefooterImage {
-      width: 663px;
-      height: auto;
+      object-fit: contain;
     }
+  }
+
   }
 }
 

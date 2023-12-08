@@ -51,20 +51,24 @@ const page = () => {
           ))
         }
       </div>
-      {/* <div className={styles.roleSection}>
+      <div className={styles.roleSection}>
         <h2 className={styles.roleSectionHeader}>Looking for another role?</h2>
         <Link href="/" className={styles.roleSectionLink}>Let&apos;s chat</Link>
-      </div> */}
-      {/* <div className={styles.prefooter}>
+      </div>
+      <div className={styles.prefooter}>
         <div className={styles.prefooterContainer}>
           <div className={styles.prefooterDesc}>
-            <Image src={group09} alt="group"/>
+            <div className={styles.imageGroupCover}>
+              <Image src="/Group09.png" fill className={styles.img} alt="group"/>
+            </div>
             <h2 className={styles.prefooterHeader}>eLogii <br />achieves<br />100% customer<br />satisfaction</h2>
             <Link href="/" className={styles.roleSectionLink}>See client stories</Link>
           </div>
-          <Image src={prefooterImg} alt="prefooter" className={styles.prefooterImage} />
+          <div className={styles.imageCover}>
+            <Image fill src="/prefooter.png" alt="prefooter" className={styles.prefooterImage} />
+          </div>
         </div>
-      </div> */}
+      </div>
     </main>
   )
 }
