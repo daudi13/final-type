@@ -141,8 +141,8 @@
 
         .groupImgCover{
         position: relative;
-        width: 57px;
-        height: 34px;
+        width: 73px;
+        height: 33px;
 
         .groupImg{
           object-fit: contain;
@@ -181,9 +181,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  padding-left: 211px;
   flex-direction: column;
   justify-content: center;
+  padding-left: 320px;
   gap: 60px;
 
     .groupImgCover{

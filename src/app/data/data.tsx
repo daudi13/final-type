@@ -13,14 +13,14 @@ export const success: ISuccess = [
   {
     id: 2,
     primaryImg: "/Rectangle45.png",
-    groupImg: "/Group111.png",
+    groupImg: "/group202.png",
     content: "eLogii achieves 100% customer satisfaction",
     url: "",
   },
   {
     id: 3,
     primaryImg: "/Rectangle95.png",
-    groupImg: "/Group112.png",
+    groupImg: "/Group203.png",
     content: "Velti scales team to drive digital transformation",
     url: "",
   },
