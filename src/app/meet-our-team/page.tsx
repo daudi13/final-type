@@ -11,7 +11,7 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 
 const page = () => {
   return (
-    <main className={openSans.className}>
+    <main>
       <div className={styles.heroSection}>
         <div className={styles.heroTextSection}>
           <div className={styles.imageCover}>

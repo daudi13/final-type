@@ -53,4 +53,18 @@ export type IAboutUs = {
   primaryImage: string,
   absoluteImage: string,
   right: boolean
+}[];
+
+export type ILinks = {
+  id: number,
+  title: string,
+  url: string,
+}[];
+
+export type ISuccess = {
+  id: number,
+  primaryImg: string,
+  groupImg: string,
+  content: string,
+  url: string
 }[]

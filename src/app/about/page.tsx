@@ -32,13 +32,13 @@ const page = () => {
                   <Image src={item.img1} fill alt='vectors' className={styles.img} />
                 </div>
                 <h3 className={styles.midSectionHeader}>{item.title}</h3>
-                <ul className={styles.midSectionList}>
+                <div className={styles.midSectionList}>
                   {
                     item.content.map((listItem, index) => (
-                      <li className={styles.midSectionListItem} key={index}>{listItem}</li>
+                      <div className={styles.midSectionListItem} key={index}>{listItem}</div>
                     )
                   )}
-                </ul>
+                </div>
                 <Link href={item.getInTouchLink} className={styles.getInTouchLink}>Get in touch</Link>
               </div>
               <div className={styles.imageCoverPrimary}>

@@ -1,4 +1,37 @@
-import { ICards, IData, IData2, IDevTools, IFeaturedProfiles, ILogos, IAboutUs } from "../types/types";
+import { group } from "console";
+import { ICards, IData, IData2, IDevTools, IFeaturedProfiles, ILogos, IAboutUs, ILinks, ISuccess } from "../types/types";
+import { url } from "inspector";
+
+export const success: ISuccess = [
+  {
+    id: 1,
+    primaryImg: "/Rectangle91.png",
+    groupImg: "/Group110.png",
+    content: "TripArc squashes 3x more software bugs",
+    url: "",
+  },
+  {
+    id: 2,
+    primaryImg: "/Rectangle45.png",
+    groupImg: "/Group111.png",
+    content: "eLogii achieves 100% customer satisfaction",
+    url: "",
+  },
+  {
+    id: 3,
+    primaryImg: "/Rectangle95.png",
+    groupImg: "/Group112.png",
+    content: "Velti scales team to drive digital transformation",
+    url: "",
+  },
+  {
+    id: 4,
+    primaryImg: "/image67.png",
+    groupImg: "/Group113.png",
+    content: "Blaze launches cutting-edge social growth platform",
+    url: "",
+  },
+]
 
 export const logos: ILogos = [
   '/image28.png',
@@ -229,5 +262,23 @@ export const aboutUs: IAboutUs = [
     primaryImage: "/Rectangle203.png",
     absoluteImage: "/Ellipse203.png",
     right: true
+  },
+]
+
+export const links: ILinks = [
+  {
+    id: 1,
+    title: "For Companies",
+    url: "/"
+  },
+  {
+    id: 2,
+    title: "Meet Our Talent",
+    url: "/meet-our-team"
+  },
+  {
+    id: 3,
+    title: "About us",
+    url: "/about"
   },
 ]
