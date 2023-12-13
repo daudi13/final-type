@@ -1,242 +1,169 @@
 .heroSection {
-  background-color: #f3fafc;
-  height: 600px;
+  height: 750px;
   width: 100%;
+  background-image: url("/worldImage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
-  padding-right: 16rem;
+  justify-content: center;
 
-  .heroTextSection {
-    padding-left: 290px;
-    flex: 1;
-
-    .heroTextHeader {
-      font-family: 'Open sans', sans-serif;
-      font-weight: bolder;
+  .heroSectionText{
+    .heroText {
+      color: white;
+      font-family: "Open sans", sans-serif;
+      font-weight: 700;
       font-size: 48px;
-      color: #166882;
-      line-height: 55.2px;
-    }
-
-    .heroTextDesc {
-      margin-top: 40px;
-      font-family: 'Open sans', sans-serif;
-      font-weight: 600;
-      font-size: 20px;
-      color: #000;
-      line-height: 29px;
     }
   }
+}
 
-  .imageCover{
+.factListSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .factList{
+    margin-top: 125px;
+    list-style: none;
+    width: 800px;
+    text-align: center;
+
+    & > .factListItem + .factListItem {
+      margin-top: 4rem;
+    }
+
+      .factListItem{
+      font-size: 40px;
+      font-family: 'Open sans', sans-serif;
+      font-weight: 500;
+      color: #000;
+
+
+      .highlights{
+        color: #0E9AC0;
+      }
+    }
+  }
+}
+
+.employeeBox{
+  display: flex;
+  align-items: center;
+  margin-top: 125px;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 132.5px;
+
+  .imgCover{
+    width: 1025px;
+    height: 681px;
     position: relative;
-    flex: 1;
-    height: 445px;
 
-    .heroImage {
+    .meetTalentLink{
       object-fit: contain;
     }
   }
 
-
-  .heroCornerImage {
-    position: absolute;
-    bottom: -150px;
-    right: 0;
+  .meetTalentLink {
+    padding: 12.5px 20px;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #000;
+    text-decoration: none;
   }
 }
 
-.midSection{
+.randomFactsSection{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 18rem;
-  margin: 12rem 0;
-  
-  
-  & > * {
-    display: flex;
-    align-items: center;
-    gap: 77px;
+
+  .mainImage{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.paradigmShift{
+  margin: 10rem auto;
+  display: flex;
+  justify-content: left;
+  padding: 0 22rem;
+  align-items: center;
+
+  .paradigmShiftWrapper{
     position: relative;
+    
+    .mainBox{
+      padding: 67px 99px 66px 62px;
+      width: 570px;
+      background-color:#F3FAFC;
 
-      .midSectionLeft{
-        width: 518px;
+      .mainBoxHeader{
+        font-weight: 700;
+        font-family: 'Open sans', sans-serif;
+        font-size: 48px;
+        margin-bottom: 80px;
+      }
+      
+      .mainBoxMainDesc{
+        gap: 30px;
         display: flex;
+        align-items: flex-start;
+        justify-content: center;
         flex-direction: column;
-        justify-content: space-between;
+        margin-bottom: 80px;
 
-        .getInTouchLink{
-          align-self: flex-start;
-          padding: 10px 25px;
-          border-radius: 30px;
-          border: 2px solid #0E9AC0;
-          background-color: #0E9AC0;
-          text-decoration: none;
-          font-size: 20px;
-          color: #fff;
-          font-weight: 700;
-          font-size: 20px;
-          font-family: 'Open Sans', sans-serif;
-          margin-top: 30px;
-          text-align: center;
+        .mainBoxInner{
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        }
+          .iconCover{
+            width: 79px;
+            height: 79px;
+            margin-right: 30px;
+            position: relative;
+          }
 
-        .midSectionHeader{
-          font-family: 'Open sans', sans-serif;
-          font-weight: 500;
-          font-size: 37px;
-          margin-bottom: 30px;
-          margin-top: 30px;
-        }
+          .icon{
+            object-fit: contain;
+          }
 
-        .midSectionList {
-          padding-left: 25px;
-
-          .midSectionListItem {
-            font-family: 'Open sans', sans-serif;
-            font-weight: 500;
+          .mainBoxInnerText{
             font-size: 20px;
+            font-family: 'Open sans', sans-serif;
+            font-weight: 600;
           }
         }
       }
     }
 
-  .midSectionItem{
-    flex-direction: row-reverse;
-  }
-  .imageCoverPrimary{
-    position: relative;
-    z-index: 1000;
-    width: 482px;
-    height: 360px;
-
-    .primaryImage {
-      object-fit: contain;
-    }
-  }
-
-  .topRightCorner {
-    position: absolute;
-    top: -80px;
-    right: -120px;
-    width: 298px;
-    height: 298px;
-  }
-
-  .topLeftCorner{
-    position: absolute;
-    top: -80px;
-    left: -120px;
-    width: 298px;
-    height: 298px;
-  }
-
-  .bottomRightCorner{
-    position: absolute;
-    bottom: -80px;
-    right: -120px;
-    width: 298px;
-    height: 298px;
-  }
-
-  .imageCoverAbsolute{
-    object-fit: contain;
-  }
-
-
-
-}
-
-.roleSection {
-  height: 456px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #166882;
-
-  .roleSectionHeader {
-    font-family: 'Open sans', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 60px;
-  }
-
-  .roleSectionLink {
-    padding: 12px 25px;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    text-align: center;
-    align-self: center;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Open sans', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-  }
-}
-
-.prefooter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 851px;
-  width: 100%;
-
-  .prefooterContainer{
-    width:60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-  .prefooterDesc {
-    .prefooterHeader {
+    .joinUSBtn {
+      padding: 12.5px 20px;
+      background-color: #0E9AC0;
+      border-radius: 30px;
       font-family: 'Open sans', sans-serif;
       font-weight: 600;
-      font-size: 36px;
-      color: #000;
-      margin-top: 30px;
-      margin-bottom: 60px;
-    }
-
-    .roleSectionLink {
-      padding: 12px 25px;
-      border: 2px solid #000;
-      border-radius: 30px;
-      text-align: center;
-      align-self: center;
       text-decoration: none;
-      color: #000;
-      font-family: 'Open sans', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
+      color: #fff;
     }
-  }
 
-  .imageCover{
-    position: relative;
-    width: 663px;
-    height: 491px;
+    .imageCover{
+      position: absolute;
+      right: -80%;
+      top: 25%;
+      width: 534px;
+      height: 422px;
+    }
 
-    .prefooterImage {
+    .peopleImage{
       object-fit: contain;
     }
-  }
-
-  }
-}
-
-.imageGroupCover{
-  position: relative;
-  height: 32px;
-  width: 74px;
-
-  .groupImg{
-    object-fit: contain;
   }
 }
