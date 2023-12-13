@@ -1,6 +1,5 @@
 import { group } from "console";
-import { ICards, IData, IData2, IDevTools, IFeaturedProfiles, ILogos, IAboutUs, ILinks, ISuccess } from "../types/types";
-import { url } from "inspector";
+import { ICards, IData, IData2, IDevTools, IFeaturedProfiles, ILogos, IAboutUs, ILinks, ISuccess, IMidSectionDate } from "../types/types";
 
 export const success: ISuccess = [
   {
@@ -281,4 +280,36 @@ export const links: ILinks = [
     title: "About us",
     url: "/about"
   },
+];
+
+
+export const midSectionDate: IMidSectionDate = [
+  {
+    id: 1,
+    title: "Open new doors",
+    content: <p>Access <span>full-time, remote jobs in tech</span> with partner companies in North America & Europe</p>,
+    img: "/blackgirl.png",
+    reverse: true
+  },
+  {
+    id: 2,
+    title: "Lean and earn",
+    content: <p><span>Get paid from day one</span> to train in the exact skills you need to succeed</p>,
+    img: "/blackcouple.png",
+    reverse: false
+  },
+  {
+    id: 3,
+    title: "Accelerate your career",
+    content: <p>Grow on the job with the support of our <span>career coaches and technical mentors</span></p>,
+    img: "/businessBlack.png",
+    reverse: true
+  },
+  {
+    id: 3,
+    title: "Find your community",
+    content: <p><span>Connect with your peers</span> through Tana happy hours, workshops, and in-person get-togethers</p>,
+    img: "/smilingsec.png",
+    reverse: false
+  }
 ]

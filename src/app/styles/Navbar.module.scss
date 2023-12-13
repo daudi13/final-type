@@ -20,7 +20,7 @@
       align-items: center;
       list-style-type: none;
       gap: 30px;
-
+      
       .menuLinks {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
@@ -52,6 +52,15 @@
       height: 32px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .navbarWrapper{
+      width: 90%;
+    }
+    .menuItems{
+      display: none;
+    }
+  }
 }
 
 .dropDown{
@@ -74,7 +83,7 @@
     display: flex;
     gap: 20px;
     padding: 10px 20px;
-
+    
     .links{
       font-family: 'Open Sans', sans-serif;
       font-weight: 600;
@@ -84,7 +93,7 @@
       color: #262F43;
       cursor: pointer;
       position: relative;
-
+      
       &:hover::after{
         content: "";
         position: absolute;

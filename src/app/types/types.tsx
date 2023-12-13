@@ -67,4 +67,12 @@ export type ISuccess = {
   groupImg: string,
   content: string,
   url: string
+}[];
+
+export type IMidSectionDate = {
+  id: number,
+  title: string,
+  content: JSX.Element,
+  img: string,
+  reverse: boolean
 }[]

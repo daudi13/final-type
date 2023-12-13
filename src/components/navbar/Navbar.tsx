@@ -13,8 +13,6 @@ const openSans = Open_Sans({ subsets: ['latin'] });
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
 
-  navActive && console.log("I was hovering");
-
   return (
     <div className={`${styles.navbar} ${openSans.className}`} style={{position: "fixed", top: 0}}>
       <div className={styles.navbarWrapper}>

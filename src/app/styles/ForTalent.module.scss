@@ -1,0 +1,206 @@
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 750px;
+  background-image: url('/twowomenChat.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .headerSectionText{
+    width: 50%;
+    display: flex;
+    padding-left: 5rem;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(7px);
+
+    .headerText{
+      .imageCover{
+        height: 34px;
+        width: 57px;
+        position: relative;
+
+        .groupImg{
+          object-fit: contain;
+        }
+      }
+    }
+
+    .headerTextTitle{
+      font-family: "Archivo", sans-serif;
+      font-weight: 600;
+      font-size: 48px;
+      color: #166882;
+      margin-top: 20px;
+    }
+
+    .headerTextDesc{
+      font-family: "Open sans", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      width: 520px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.postHeaderSection{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .postHeaderSectionText{
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    width: 750px;
+    margin-bottom: 30px;
+
+    .highlighted{
+      color: #1189ab;
+    }
+  }
+
+}
+
+.linkBtn{
+  font-family: "Open sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  padding: 12.5px 20px;
+  background-color: #0E9AC0;
+  border-radius: 30px;
+}
+.midSection{
+  .itemSection{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    
+    .textBox{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 40px;
+      justify-content: center;
+
+      .midSectionTitle{
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 30px
+      }
+
+      .blueUnderline{
+        height: 2px;
+        width: 50px;
+        background-color: #0E9AC0;
+        margin-bottom: 30px;
+      }
+
+      p {
+        width: 500px;
+        font-size: 20px;
+        font-family: "Open sans", sans-serif;
+        font-weight: 400;
+
+        span{
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .imgCover{
+      height: 329px;
+      width: 500px;
+      position: relative;
+
+      .itemSectionImage {
+        object-fit: contain;
+      }
+    }
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.cardTestimonial {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .testimonialCard{
+    width: 1110px;
+    height: 504px;
+    position: relative;
+
+    .img{
+      object-fit: contain;
+    }
+  }
+}
+
+
+.preFooter{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 731px;
+  background-image: url('/stillouette.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(22,104,130, 0.1);
+    background: linear-gradient(90deg, rgba(22,104,130,0.4) 48%, rgba(13,21,38,0.4) 100%);
+  }
+
+  .preFooterText{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    width: 600px;
+    text-align: center;
+
+    .imgContainer{
+      position: relative;
+      height: 34px;
+      width: 78px;
+
+      .img{
+        object-fit: contain;
+      }
+    }
+    
+    .preFooterHeader{
+      color: #fff;
+      font-family: "Archivo", sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+}
