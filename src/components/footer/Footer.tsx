@@ -28,8 +28,8 @@ const Footer = () => {
           <div style={{display: 'flex', gap: '200px'}}>
             <ul className={styles.footerLinks}>
               <li className={styles.footerLink}><Link href="/why" className={styles.linkItem}>Why Tana</Link></li>
-              <li className={styles.footerLink}><Link href="/tana" className={styles.linkItem}>How it Works</Link></li>
-              <li className={styles.footerLink}><Link href="/meet" className={styles.linkItem}>Meet our Talent</Link></li>
+              <li className={styles.footerLink}><Link href="/how" className={styles.linkItem}>How it Works</Link></li>
+              <li className={styles.footerLink}><Link href="/meet-our-team" className={styles.linkItem}>Meet our Talent</Link></li>
             </ul>
             <ul className={styles.footerLinks}>
               <li className={styles.footerLink}><Link href="/about" className={styles.linkItem}>About Us</Link></li>

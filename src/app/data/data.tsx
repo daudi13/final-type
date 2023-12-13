@@ -231,7 +231,7 @@ export const devTools: IDevTools = [
   "Apache Maven",
 ];
 
-export const aboutUs: IAboutUs = [
+export const ourRoles: IAboutUs = [
   {
     id: 1,
     title: "QA engineers",
