@@ -20,7 +20,7 @@ const Navbar = () => {
         
         <div className={styles.menuItems}>
           <div className={styles.menuDropDown}>
-            <Link className={`${styles.menuLinks} ${styles.dropDown}`} onMouseEnter={() => setNavActive(true)} onMouseLeave={() => setNavActive(false)} href="/">For Companies{navActive ? <FaChevronDown size={10} /> : <FaChevronUp size={10} />}</Link>
+            <div className={`${styles.menuLinks} ${styles.dropDown}`} onMouseEnter={() => setNavActive(true)} onMouseLeave={() => setNavActive(false)}>For Companies{navActive ? <FaChevronDown size={10} /> : <FaChevronUp size={10} />}</div>
           </div>
           <Link className={styles.menuLinks} href="/meet-our-team">Meet Our Talents</Link>
           <Link className={styles.menuLinks} href="/about">About us</Link>
