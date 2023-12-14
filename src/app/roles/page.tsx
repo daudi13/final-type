@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/app/styles/About.module.scss'
+import styles from '@/app/styles/Roles.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ourRoles } from '../data/data'

@@ -1,0 +1,258 @@
+.header{
+  display: flex;
+  height: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  background-color: #F3FAFC;
+
+  .headerText{
+
+    .iconCover{
+      position: relative;
+      height: 34px;
+      width: 57px;
+      margin-bottom: 60px;
+
+      .img{
+        object-fit: contain;
+      }
+    }
+
+    .headerTitle{
+      font-family: "Archivo", sans-serif;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 55.2px;
+      margin-bottom: 20px;
+    }
+
+    .headerText{
+      font-weight: 400;
+      font-family: "Open sans", sans-serif;
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 60px;
+    }
+
+    .headerLink{
+      font-weight: 700;
+      font-family: "Open sans", sans-serif;
+      color: #fff;
+      line-height: 27.24px;
+      text-align: center;
+      padding: 14px 32px;
+      background: #0E9AC0;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+  }
+
+  .imgCover{
+    position: relative;
+    height: 425px;
+    width: 555px;
+
+    .img{
+      object-fit: contain;
+    }
+  }
+}
+
+.differenceSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+
+  .sectionHeader{
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 69px;
+  }
+
+  .points{
+    display: flex;
+    gap: 3rem;
+
+    .pointsBox{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .point{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        p {
+          font-family: "Open sans", sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.boxSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+
+  .boxSectionInner{
+    width: 65%;
+    background-color: #F3FAFC;
+    display: flex;
+    justify-content: right;
+    border-radius: 30px;
+    padding: 54px 57px 35px;
+    position: relative;
+
+    .imageCover{
+      position: absolute;
+      width: 590px;
+      height: 383px;
+      top: -50px;
+      left: -80px;
+
+      .img{
+        object-fit: contain;
+      }
+
+    }
+
+    .textSection{
+      width: 476px;
+
+      .innerHeader{
+        font-family: "Archivo", sans-serif;
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 500;
+      }
+      
+      .points{
+        margin-bottom: 30px;
+      }
+  
+      .points > * + * {
+        margin-top: 20px;
+      }
+  
+      .pointItem{
+        font-weight: 400;
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 20px;
+        line-height: 30px;
+      }
+
+      .link{
+        border-radius: 30px;
+        border: 2px solid #000;
+        padding: 14px 32px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.uniqueSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+  flex-direction: column;
+
+  .uniqueHeader{
+    font-family: "Archivo", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .uniqueBox{
+      .pointSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .iconBox{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 52px;
+          height: 52px;
+          background-color: yellow;
+        }
+      }
+    }
+  }
+}
+
+.preFooter{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 700px;
+  background-image: url('/group1123.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  .textSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 220px;
+    gap: 60px;
+    width: 729px;
+    background-color: rgba(243, 250, 252, 0.05);
+    backdrop-filter: blur(4px);
+    height: 100%;
+  }
+
+  .imgCover{
+    height: 34px;
+    width: 78px;
+    position: relative;
+  }
+
+  .prefooterHeader{
+    font-family: "Archivo", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .link{
+    align-self: start;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    padding: 14px 32px;
+    background-color: #0E9AC0;
+    border-radius: 30px;
+  }
+}
