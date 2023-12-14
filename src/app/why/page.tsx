@@ -2,11 +2,7 @@ import React from 'react'
 import style from "../styles/Why.module.scss"
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaRegCheckCircle, FaFeather  } from "react-icons/fa";
-import { SlBadge } from "react-icons/sl";
-import { BsGraphUp } from "react-icons/bs";
-import { TbMessage2 } from "react-icons/tb";
-import { RiHeartsFill } from "react-icons/ri";
+import { FaRegCheckCircle  } from "react-icons/fa";
 
 
 const page = () => {
@@ -30,29 +26,29 @@ const page = () => {
         <div className={style.points}>
           <div className={style.pointsBox}>
             <div className={style.point}>
-              <FaRegCheckCircle size={24}/>
+              <FaRegCheckCircle/>
               <p>Fully embedded, dedicated talent</p>
             </div>
             <div className={style.point}>
-              <FaRegCheckCircle size={24}/>
+              <FaRegCheckCircle/>
               <p>Complete control of your team</p>
             </div>
             <div className={style.point}>
-              <FaRegCheckCircle size={24}/>
+              <FaRegCheckCircle/>
               <p>Talent who match your value</p>
             </div>
           </div>
           <div className={style.pointsBox}>
             <div className={style.point}>
-              <FaRegCheckCircle size={24}/>
+              <FaRegCheckCircle/>
               <p>Motivated individuals for the long-term</p>
             </div>
             <div className={style.point}>
-              <FaRegCheckCircle size={24}/>
+              <FaRegCheckCircle/>
               <p>Tailored training to meet your needs</p>
             </div>
             <div className={style.point}>
-              <FaRegCheckCircle size={24}/>
+              <FaRegCheckCircle/>
               <p>Ongoing support for you and your talent</p>
             </div>
           </div>
@@ -82,7 +78,7 @@ const page = () => {
           <div className={style.uniqueBox}>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <SlBadge />
+                <Image src="/badge.png" className={style.img} fill alt=""/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Commitment to excellence</p>
@@ -91,7 +87,7 @@ const page = () => {
             </div>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <BsGraphUp />
+                <Image src="/lifeline.png" className={style.img} fill alt=""/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Your needs, your way</p>
@@ -100,7 +96,7 @@ const page = () => {
             </div>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <TbMessage2 />
+                <Image src="/messagecode.png" className={style.img} fill alt=""/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Seamless collaboration</p>
@@ -108,8 +104,8 @@ const page = () => {
               </div>
             </div>
             <div className={style.pointSection}>
-              <div className={style.iconBox}>
-                <FaFeather />
+              <div className={style.iconBox} style={{ backgroundColor: "#c5e2ee", borderRadius: "10px"}}>
+                <Image src="/cloud-add.svg" className={style.img} fill alt=""/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Lighter than light touch</p>
@@ -118,21 +114,24 @@ const page = () => {
             </div>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <RiHeartsFill />
+                <Image src="/badge.png" className={style.img} fill alt=""/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Culture that transcends borders</p>
                 <p className={style.text}>We build community on the ground for long-term engagement and retention</p>
               </div>
             </div>
+            <Link href="" className={style.link}>How we make it happen</Link>
           </div>
           <div className={style.imageCover}>
             <Image className={style.img} src="/muhindi.png" fill alt='' />
           </div>
           <div className={style.infoBox}>
-            <p className={style.textBox}>"“Kariuki’s the best tech support rep I’ve ever hired. We’ve tried people for this role in Eastern Europe — even in the UK — there’s just no comparison. Clients love him.”"</p>
-            <p className={style.name}>Andrew Mukerjee</p>
-            <span className={style.position}>Chief Executive Officer</span>
+            <div className={style.content}>
+              <p className={style.textBox}>"Kariuki’s the best tech support rep I’ve ever hired. We’ve tried people for this role in Eastern Europe — even in the UK — there’s just no comparison. Clients love him.”</p>
+              <p className={style.name}>Andrew Mukerjee</p>
+              <span className={style.position}>Chief Executive Officer</span>
+            </div>
           </div>
         </div>
       </div>
