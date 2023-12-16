@@ -75,4 +75,12 @@ export type IMidSectionDate = {
   content: JSX.Element,
   img: string,
   reverse: boolean
-}[]
+}[];
+
+export type IHow = {
+  title: string,
+  points: JSX.Element[],
+  img: string,
+  right: boolean
+}[];
+

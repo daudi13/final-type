@@ -1,5 +1,5 @@
 import { group } from "console";
-import { ICards, IData, IData2, IDevTools, IFeaturedProfiles, ILogos, IAboutUs, ILinks, ISuccess, IMidSectionDate } from "../types/types";
+import { ICards, IData, IData2, IDevTools, IFeaturedProfiles, ILogos, IAboutUs, ILinks, ISuccess, IMidSectionDate, IHow } from "../types/types";
 
 export const success: ISuccess = [
   {
@@ -133,7 +133,7 @@ export const cards: ICards = [
   {
     id: 2,
     img: "/4116.png",
-    img2:"/quote2.png",
+    img2: "/quote2.png",
     content: "Adriana’s done fantastic work. She’s so proactive I just explain what we need, and she comes back with the solution.",
     managerName: "Johanna Strutzenberger",
     position: "Head of Engineering, LEVY Health",
@@ -146,7 +146,7 @@ export const cards: ICards = [
     managerName: "Johanna Strutzenberger",
     position: "Head of Engineering, LEVY Health",
   },
-]
+];
 
 export const featuredProfiles: IFeaturedProfiles = [
   {
@@ -262,7 +262,7 @@ export const ourRoles: IAboutUs = [
     absoluteImage: "/Ellipse203.png",
     right: true
   },
-]
+];
 
 export const links: ILinks = [
   {
@@ -287,29 +287,54 @@ export const midSectionDate: IMidSectionDate = [
   {
     id: 1,
     title: "Open new doors",
-    content: <p>Access <span>full-time, remote jobs in tech</span> with partner companies in North America & Europe</p>,
+    content: <p>Access <strong>full-time, remote jobs in tech</strong> with partner companies in North America & Europe</p>,
     img: "/blackgirl.png",
     reverse: true
   },
   {
     id: 2,
     title: "Lean and earn",
-    content: <p><span>Get paid from day one</span> to train in the exact skills you need to succeed</p>,
+    content: <p><strong>Get paid from day one</strong> to train in the exact skills you need to succeed</p>,
     img: "/blackcouple.png",
     reverse: false
   },
   {
     id: 3,
     title: "Accelerate your career",
-    content: <p>Grow on the job with the support of our <span>career coaches and technical mentors</span></p>,
+    content: <p>Grow on the job with the support of our <strong>career coaches and technical mentors</strong></p>,
     img: "/businessBlack.png",
     reverse: true
   },
   {
     id: 3,
     title: "Find your community",
-    content: <p><span>Connect with your peers</span> through Tana happy hours, workshops, and in-person get-togethers</p>,
+    content: <p><strong>Connect with your peers</strong> through Tana happy hours, workshops, and in-person get-togethers</p>,
     img: "/smilingsec.png",
     reverse: false
   }
+];
+
+export const how: IHow = [
+  {
+    title: "Meanwhile, Tana is...",
+    img: "/hijabi.png",
+    points: [<p>Sourcing bright, driven graduates from <strong>top STEM programs</strong></p>, <p>Running candidates through a <strong>five-stage assessment process</strong> to screen for tech fundamentals, communication, curiosity, problem-solving, self-motivation, adaptability, and much, much more</p>, <p>
+      Finding the right matches for <strong>your requirements & culture</strong></p>],
+    right: true
+  },
+  {
+    title: "Meanwhile, Tana is...",
+    img: "/pink.png",
+    points: [<p>Equipping your incoming team members to succeed with a pre-deployment bootcamp that covers <strong>core requirements of the job, professional skills, and global business norms</strong></p>, <p>Handling
+      <strong>contracts, payroll, tax, and compliance</strong> in-country</p>, <p>
+      Finding the right matches for <strong>your requirements & culture</strong></p>],
+    right: false
+  },
+  {
+    title: "Meanwhile, Tana is...",
+    img: "/talk.png",
+    points: [<p>Driving strong performance with an <strong>on-the-ground team lead</strong></p>, <p>Helping your team members overcome challenges and upskill on the job through <strong>our network of technical mentors</strong></p>, <p>
+      Fostering <strong>strong morale & community</strong> on the ground through Tana happy hours, workshops, and in-person get-togethers</p>],
+    right: true
+  },
 ]

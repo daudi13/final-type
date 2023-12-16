@@ -1,8 +1,141 @@
-import React from 'react'
+import React from 'react';
+import style from "../styles/How.module.scss";
+import Image from 'next/image';
+import Link from 'next/link';
+import { how } from '../data/data';
+import { FaRegCheckCircle  } from "react-icons/fa";
 
 const page = () => {
   return (
-    <div>page</div>
+    <main>
+      <div className={style.header}>
+        <div className={style.imgCoverLeft}>
+          <Image src="/supervisor.png" alt='' fill className={style.img} />
+        </div>
+        <div className={style.imgCoverRight}>
+          <Image src="/muhindi.png" alt='' fill className={style.img} />
+        </div>
+        <div className={style.imgCoverSemi}>
+          <Image src="/Ellipse684.png" alt='' fill className={style.img} />
+        </div>
+        <div className={style.imgCoverRect}>
+          <Image src="/Rectangle81.png" alt='' fill className={style.img} />
+        </div>
+        <div className={style.imgCoverQuart}>
+          <Image src="/Ellipse685.png" alt='' fill className={style.img} />
+        </div>
+        <div className={style.heroText}>
+          <div className={style.imgCover}>
+          <Image src="/Group113.png" alt='' fill className={style.img} />
+          </div>
+          <h1 className={style.heroTitle}>Talent you can Trust</h1>
+          <p className={style.heroText}>
+            No more hit-or-miss Find vetted and trained team members who grow alongside you
+          </p>
+        </div>
+      </div>
+      <div className={style.postHeader}>
+          <h2 className={style.title}>Leave the heavy lifting to us</h2>
+        <div className={style.mainBox}>
+          <div className={style.point}>
+            <div className={style.number}>1</div>
+            <p className={style.mainText}>Tell us what you’re looking for</p>
+          </div>
+          <div className={style.point}>
+            <div className={style.number}>2</div>
+            <p className={style.mainText}>Interview hand-picked finalists</p>
+          </div>
+          <div className={style.point}>
+            <div className={style.number}>3</div>
+            <p className={style.mainText}>welcome your new team members</p>
+          </div>
+        </div>
+        <Link href="" className={style.link}>Get started now</Link>
+      </div>
+        <div className={style.whyUs}>
+          {
+            how.map((item, index) => (
+              <div key={index} className={`${style.whyUsBox} ${item.right && style.whyUsRight}`}>
+                <div className={style.desc}>
+                  <div className={style.mainTitle}>
+                    <h3 className={style.whyUsTitle}>{item.title}</h3>
+                    <div className={style.whyUsDash}></div>
+                  </div>
+                    <div className={style.whyUsMainBox}>
+                    {
+                      item.points.map((point, index) => (
+                        <div className={style.pointBox} key={index}>
+                          <FaRegCheckCircle size={30} />
+                          <p className={style.pointText}>{point}</p>
+                        </div>
+                    ))
+                    }
+                  </div>
+                </div>
+                <div className={style.imageBox}>
+                  <Image src={item.img} fill className={style.imageCover} alt='item' />
+                </div>
+              </div>
+            ))
+          }
+      </div>
+      <div className={style.reasons}>
+        <div className={style.inner}>
+          <div className={style.reasonsUpper}>
+            <div className={style.imgCover}>
+              <Image src="/Shapes.png" fill  alt="" className={style.img} />
+            </div>
+            <p className={style.text}>Whatever you need we've got you</p>
+          </div>
+          <div className={style.midBox}>
+            <div className={style.midBoxSec}>
+              <div className={style.imgCover}>
+                <Image src="/IconBackground.png" fill  alt="" className={style.img} />
+              </div>
+              <p className={style.title}>No compromises</p>
+              <p className={style.text}>Stay on Budget without sacrifucing quality</p>
+            </div>
+            <div className={style.midBoxSec}>
+              <div className={style.imgCover}>
+                <Image src="/IconBackground2.png" fill  alt="" className={style.img} />
+              </div>
+              <p className={style.title}>No Surprises</p>
+              <p className={style.text}>We deliver reliably — every person, every time</p>
+            </div>
+            <div className={style.midBoxSec}>
+              <div className={style.imgCover}>
+                <Image src="/IconBackground3.png" fill  alt="" className={style.img} />
+              </div>
+              <p className={style.title}>No Stress</p>
+              <p className={style.text}>End-to-end support. We’re in this with you</p>
+            </div>
+          </div>
+            <Link href="" className={style.link}>What makes us special</Link>
+        </div>
+      </div>
+      <div className={style.funFactSection}>
+        <div className={style.imgCover}>
+          <Image src="/Image.png" fill className={style.img} alt='' />
+        </div>
+      <div className={style.textField}>
+        <div className={style.iconCover}>
+          <Image src="/Group113.png" alt='' fill className={style.img} />
+        </div>
+        <p className={style.text}>TripArc squashes 3x more software bugs</p>
+        <Link href="" className={style.link}>See client stories</Link>
+      </div>
+      </div>
+      <div className={style.prefooter}>
+        <div className={style.prefooterOverlay}></div>
+        <div className={style.midBody}>
+          <div className={style.imgCover}>
+            <Image src="/Shapes.png" fill  alt="" className={style.img} />
+          </div>
+          <p>More questions?</p>
+          <Link href="" className={style.link}>We have answers</Link>
+        </div>
+      </div>
+    </main>
   )
 }
 
