@@ -13,8 +13,6 @@ export default function Home() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [tel, setTel] = useState("")
-  const [company, setCompany] = useState("")
   const modalOpen = state.modalOpen;
 
   return (
@@ -100,15 +98,13 @@ export default function Home() {
           </div>
       </div>
       {
-        modalOpen && <div className={styles.modal}>
+        modalOpen && <div className={styles.modal} onClick={() => dispatch({ type: "CHANGE_MODAL" })}>
           <form className={styles.contactForm}>
             <div className={styles.contactFormColumnRight}>
               <h2 className={styles.contactFormHeader}>We&apos;d love to hear from you!</h2>
               <div className={styles.underline} />
               <div className={styles.mainForm}>
-                <div className={styles.mainSections}>
-                  <div className={styles.left}>
-                    <div className={styles.mainFormName}>
+                <div className={styles.mainFormName}>
                   <div className={styles.inputBoxWrapper}>
                     <label className={styles.inputLabel} htmlFor="firstName">First name</label>
                     <input
@@ -131,33 +127,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.inputBoxWrapper}>
-                    <label className={styles.inputLabel} htmlFor="company">Company</label>
-                    <input
-                      type="text"
-                      className={styles.inputBox}
-                      id="company"
-                      value={company}
-                      onChange={(e) => setCompany(e.target.value)}
-                    />
-                  </div>
-                <div className={styles.inputBoxWrapper}>
-                  <label className={styles.inputLabel} htmlFor="email">Work Email</label>
+                  <label className={styles.inputLabel} htmlFor="email">Email</label>
                   <input
                     type='email'
                     className={styles.inputBox}
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-                <div className={styles.inputBoxWrapper}>
-                  <label className={styles.inputLabel} htmlFor="tel">Phone number</label>
-                  <input
-                    type="tel"
-                    className={styles.inputBox}
-                    id="tel"
-                    value={tel}
-                    onChange={(e) => setTel(e.target.value)}
                   />
                 </div>
                 <div className={styles.inputBoxWrapper}>
@@ -168,71 +144,6 @@ export default function Home() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
-                </div>
-                  </div>
-                  <div className={styles.right}>
-                    <div className={styles.mainFormName}>
-                  <div className={styles.inputBoxWrapper}>
-                    <label className={styles.inputLabel} htmlFor="firstName">First name</label>
-                    <input
-                      type="text"
-                      className={styles.inputBox}
-                      id="firstName"
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                    />
-                  </div>
-                  <div className={styles.inputBoxWrapper}>
-                    <label className={styles.inputLabel} htmlFor="lastName">Last name</label>
-                    <input
-                      type="text"
-                      className={styles.inputBox}
-                      id="lastName"
-                      value={lastName}
-                      onChange={(e) => setLastName(e.target.value)}
-                    />
-                  </div>
-                </div>
-                <div className={styles.inputBoxWrapper}>
-                    <label className={styles.inputLabel} htmlFor="company">Company</label>
-                    <input
-                      type="text"
-                      className={styles.inputBox}
-                      id="company"
-                      value={company}
-                      onChange={(e) => setCompany(e.target.value)}
-                    />
-                  </div>
-                <div className={styles.inputBoxWrapper}>
-                  <label className={styles.inputLabel} htmlFor="email">Work Email</label>
-                  <input
-                    type='email'
-                    className={styles.inputBox}
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-                <div className={styles.inputBoxWrapper}>
-                  <label className={styles.inputLabel} htmlFor="tel">Phone number</label>
-                  <input
-                    type="tel"
-                    className={styles.inputBox}
-                    id="tel"
-                    value={tel}
-                    onChange={(e) => setTel(e.target.value)}
-                  />
-                </div>
-                <div className={styles.inputBoxWrapper}>
-                  <label className={styles.inputLabel} htmlFor="textArea">How can we help you</label>
-                  <textarea
-                    className={styles.textArea}
-                    id="textArea"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                  />
-                </div>
-                  </div>
                 </div>
                 <button type='submit' className={styles.submitBtn}>Submit</button>
               </div>
