@@ -1,10 +1,22 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "./styles/Home.module.scss"
 import { data2, data, cards, logos } from './data/data'
 import HappyCards from '@/components/happycards/HappyCards'
+import { useContext, useState } from 'react'
+import { ModalContext } from '@/context/GrowModalContext'
 
 export default function Home() {
+  const { state, dispatch } = useContext(ModalContext);
+  const [firstName, setFirstName] = useState(" ");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [tel, setTel] = useState("")
+  const [company, setCompany] = useState("")
+  const modalOpen = state.modalOpen;
+
   return (
     <main className={styles.mainSection}>
       <div className={styles.heroSection}>
@@ -16,7 +28,7 @@ export default function Home() {
           </div>
             <p className={styles.headerText}>Unlock the world as <br />your <strong>talent pool</strong></p>
             <h3 className={styles.subTitle}>The Future of work is here</h3>
-            <Link href="" className={styles.heroBtn}>Grow Your team</Link>
+          <button className={styles.heroBtn} onClick={() => dispatch({type: "CHANGE_MODAL"})}>Grow Your team</button>
           </div>
         </div>
         <div className={styles.valuePreposition}>
@@ -44,7 +56,7 @@ export default function Home() {
           <h2 className={styles.meetOurTeamTitle}>Meet our Team</h2>
           <iframe src="https://player.vimeo.com/video/835781373?h=b24e1c23b9" width="2120" height="515"  frameBorder="0" allow="autoplay; picture-in-picture" allowFullScreen></iframe>
           <p className={styles.meetOurTeamText}>Curious to see who could be joining the slack on Monday?</p>
-          <Link href="" className={styles.learnBtn}>Learn more here</Link>
+          <Link href="/about" className={styles.learnBtn}>Learn more here</Link>
         </div>
         <div className={styles.socialProof}>
           <h2 className={styles.socialProofTitle}>Trusted By</h2>
@@ -86,7 +98,148 @@ export default function Home() {
             <p className={styles.preFooterText}>Global equity starts with giving talented young people everywhere the chance to build meaningful careers.</p>
             <Link href="" className={styles.joinBtn}>Join Us</Link>
           </div>
+      </div>
+      {
+        modalOpen && <div className={styles.modal}>
+          <form className={styles.contactForm}>
+            <div className={styles.contactFormColumnRight}>
+              <h2 className={styles.contactFormHeader}>We&apos;d love to hear from you!</h2>
+              <div className={styles.underline} />
+              <div className={styles.mainForm}>
+                <div className={styles.mainSections}>
+                  <div className={styles.left}>
+                    <div className={styles.mainFormName}>
+                  <div className={styles.inputBoxWrapper}>
+                    <label className={styles.inputLabel} htmlFor="firstName">First name</label>
+                    <input
+                      type="text"
+                      className={styles.inputBox}
+                      id="firstName"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                    />
+                  </div>
+                  <div className={styles.inputBoxWrapper}>
+                    <label className={styles.inputLabel} htmlFor="lastName">Last name</label>
+                    <input
+                      type="text"
+                      className={styles.inputBox}
+                      id="lastName"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                    />
+                  </div>
+                </div>
+                <div className={styles.inputBoxWrapper}>
+                    <label className={styles.inputLabel} htmlFor="company">Company</label>
+                    <input
+                      type="text"
+                      className={styles.inputBox}
+                      id="company"
+                      value={company}
+                      onChange={(e) => setCompany(e.target.value)}
+                    />
+                  </div>
+                <div className={styles.inputBoxWrapper}>
+                  <label className={styles.inputLabel} htmlFor="email">Work Email</label>
+                  <input
+                    type='email'
+                    className={styles.inputBox}
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className={styles.inputBoxWrapper}>
+                  <label className={styles.inputLabel} htmlFor="tel">Phone number</label>
+                  <input
+                    type="tel"
+                    className={styles.inputBox}
+                    id="tel"
+                    value={tel}
+                    onChange={(e) => setTel(e.target.value)}
+                  />
+                </div>
+                <div className={styles.inputBoxWrapper}>
+                  <label className={styles.inputLabel} htmlFor="textArea">How can we help you</label>
+                  <textarea
+                    className={styles.textArea}
+                    id="textArea"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                </div>
+                  </div>
+                  <div className={styles.right}>
+                    <div className={styles.mainFormName}>
+                  <div className={styles.inputBoxWrapper}>
+                    <label className={styles.inputLabel} htmlFor="firstName">First name</label>
+                    <input
+                      type="text"
+                      className={styles.inputBox}
+                      id="firstName"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                    />
+                  </div>
+                  <div className={styles.inputBoxWrapper}>
+                    <label className={styles.inputLabel} htmlFor="lastName">Last name</label>
+                    <input
+                      type="text"
+                      className={styles.inputBox}
+                      id="lastName"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                    />
+                  </div>
+                </div>
+                <div className={styles.inputBoxWrapper}>
+                    <label className={styles.inputLabel} htmlFor="company">Company</label>
+                    <input
+                      type="text"
+                      className={styles.inputBox}
+                      id="company"
+                      value={company}
+                      onChange={(e) => setCompany(e.target.value)}
+                    />
+                  </div>
+                <div className={styles.inputBoxWrapper}>
+                  <label className={styles.inputLabel} htmlFor="email">Work Email</label>
+                  <input
+                    type='email'
+                    className={styles.inputBox}
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className={styles.inputBoxWrapper}>
+                  <label className={styles.inputLabel} htmlFor="tel">Phone number</label>
+                  <input
+                    type="tel"
+                    className={styles.inputBox}
+                    id="tel"
+                    value={tel}
+                    onChange={(e) => setTel(e.target.value)}
+                  />
+                </div>
+                <div className={styles.inputBoxWrapper}>
+                  <label className={styles.inputLabel} htmlFor="textArea">How can we help you</label>
+                  <textarea
+                    className={styles.textArea}
+                    id="textArea"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                </div>
+                  </div>
+                </div>
+                <button type='submit' className={styles.submitBtn}>Submit</button>
+              </div>
+            </div>
+          </form>
         </div>
+      }
     </main>
   )
 }

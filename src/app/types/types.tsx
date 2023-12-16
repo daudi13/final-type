@@ -84,3 +84,10 @@ export type IHow = {
   right: boolean
 }[];
 
+export type StateType = {
+  modalOpen: boolean
+};
+
+export type ActionType = {
+  type: "CHANGE_MODAL",
+}

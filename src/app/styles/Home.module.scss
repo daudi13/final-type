@@ -1,6 +1,6 @@
 
     .mainSection{
-      // margin-bottom: 5rem;
+      position: relative;
     }
     .heroSection{
       background-image: url('../assets/pexels-christina-morillo-1181251\ 1.png');
@@ -373,6 +373,119 @@
       font-weight: 700;
       font-size: 20px;
       font-family: 'Open Sans', sans-serif;
+    }
+  }
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 11, 14, 0.2);
+  z-index: 100000000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+    .contactForm {
+    padding: 63px 30px;
+    border-radius: 30px;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 3px 9px 18px 1px rgba(166,166,166,0.75);
+
+    .contactFormColumnRight {
+      .contactFormHeader {
+        font-family: 'Open sans', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        color: #166882;
+        margin-bottom: 20px;
+      }
+
+      .underline{
+        height: 2px;
+        width: 60px;
+        background-color:#0E9AC0;
+        margin-bottom: 20px;
+      }
+
+      .mainForm{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .mainSections{
+          display: flex;
+          gap: 40px;
+        }
+
+        .mainFormName{
+          display: flex;
+          gap: 26px;
+
+          .inputBoxWrapper{
+            width: 50%;
+          }
+
+        }
+      }
+    }
+
+    .inputBoxWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    
+    .inputLabel{
+      font-family: 'Open sans', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #262F43;
+    }
+    
+    .inputBox{
+      padding: 8px 20px;
+      border-radius: 10px;
+      border: 1.5px solid #0E9AC0;
+      width: 100%;
+      
+      &:focus{
+        outline: none;
+      }
+    }
+    
+    .textArea{
+      height: 190px;
+      padding: 8px 20px;
+      border-radius: 10px;
+      border: 1px solid #0E9AC0;
+      resize: none;
+      
+      &:focus{
+        outline: none;
+      }
+    }
+    
+    .submitBtn {
+      align-self: flex-start;
+      border: none;
+      background-color: #0E9AC0;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-family: 'Open sans', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 30px;
     }
   }
 }
