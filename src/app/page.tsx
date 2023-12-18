@@ -6,14 +6,18 @@ import { data2, data, cards, logos } from './data/data'
 import HappyCards from '@/components/happycards/HappyCards'
 import { useContext, useState } from 'react'
 import { ModalContext } from '@/context/GrowModalContext'
+import { Button, Modal, Box, Typography } from '@mui/material'
 
 export default function Home() {
   const { state, dispatch } = useContext(ModalContext);
   const [firstName, setFirstName] = useState(" ");
+  const modalOpen = state.modalOpen;
+  let open = modalOpen;
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const modalOpen = state.modalOpen;
+  const handleClose = () => dispatch({ type: "CHANGE_MODAL" });
+
 
   return (
     <main className={styles.mainSection}>
@@ -97,8 +101,14 @@ export default function Home() {
             <Link href="" className={styles.joinBtn}>Join Us</Link>
           </div>
       </div>
-      {
-        modalOpen && <div className={styles.modal} onClick={() => dispatch({ type: "CHANGE_MODAL" })}>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className={styles.modal}
+      >
+        <Box className={styles.form}>
           <form className={styles.contactForm}>
             <div className={styles.contactFormColumnRight}>
               <h2 className={styles.contactFormHeader}>We&apos;d love to hear from you!</h2>
@@ -149,8 +159,8 @@ export default function Home() {
               </div>
             </div>
           </form>
-        </div>
-      }
+        </Box>
+      </Modal>
     </main>
   )
 }
