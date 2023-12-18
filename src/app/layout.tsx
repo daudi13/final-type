@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
 import { ThemeProvider } from '@/context/GrowModalContext'
+import ModalBox from '@/components/modal/Modal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
-          <Navbar/>
+          <Navbar />
+          <ModalBox/>
           {children}
           <Footer/>
         </ThemeProvider>

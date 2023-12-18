@@ -1,0 +1,106 @@
+.form {
+  height: 100%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 600px;
+
+
+  .contactForm {
+  padding: 63px 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  box-shadow: 3px 9px 18px 1px rgba(166,166,166,0.75);
+  
+  .contactFormColumnRight {
+    .contactFormHeader {
+      font-family: 'Open sans', sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      color: #166882;
+      margin-bottom: 20px;
+    }
+  
+    .underline{
+      height: 2px;
+      width: 60px;
+      background-color:#0E9AC0;
+      margin-bottom: 20px;
+    }
+  
+    .mainForm{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      .mainSections{
+        display: flex;
+        gap: 40px;
+      }
+  
+      .mainFormName{
+        display: flex;
+        gap: 26px;
+  
+        .inputBoxWrapper{
+          width: 50%;
+        }
+  
+      }
+    }
+  }
+  
+  .inputBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .inputLabel{
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #262F43;
+  }
+  
+  .inputBox{
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1.5px solid #0E9AC0;
+    width: 100%;
+    
+    &:focus{
+      outline: none;
+    }
+  }
+  
+  .textArea{
+    height: 190px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1px solid #0E9AC0;
+    resize: none;
+    
+    &:focus{
+      outline: none;
+    }
+  }
+  
+  .submitBtn {
+    align-self: flex-start;
+    border: none;
+    background-color: #0E9AC0;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+  }
+}

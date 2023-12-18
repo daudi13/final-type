@@ -8,14 +8,14 @@ const GrowYourTeam = () => {
   const useStyle = makeStyles()(() => ({
     heroBtn: {
       border: "none",
-      fontSize: "18px",
+      fontSize: "16px",
       fontFamily: '"Open Sans", sans-serif',
       fontWeight: "700",
       textDecoration: "none",
       color: "#fff",
-      padding: "12.5px 32px",
+      padding: "12.5px 22px",
       backgroundColor: "#0E9AC0",
-      borderRadius: "30px"
+      borderRadius: "25px"
     }
   }))
   const { classes } = useStyle();

@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { Open_Sans } from 'next/font/google';
 import { FaChevronDown } from "react-icons/fa6";
 import { FaChevronUp } from 'react-icons/fa6';
+import GrowYourTeam from '../growYourTeam/GrowYourTeam';
 
 const openSans = Open_Sans({ subsets: ['latin'] });
 
@@ -25,7 +26,7 @@ const Navbar = () => {
           <Link className={styles.menuLinks} href="/meet-our-team">Meet Our Talents</Link>
           <Link className={styles.menuLinks} href="/about">About us</Link>
         </div>
-        <Link className={`${styles.actionBtn} ${styles.menuAction}`} href="/grow">Grow your team</Link>
+        <GrowYourTeam/>
       </div>
       {
         navActive && <div className={styles.dropDownItem}>
