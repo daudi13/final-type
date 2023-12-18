@@ -2,11 +2,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "./styles/Home.module.scss"
-import { data2, data, cards, logos } from './data/data'
+import { data2, data, logos } from './data/data'
 import HappyCards from '@/components/happycards/HappyCards'
 import { useContext, useState } from 'react'
 import { ModalContext } from '@/context/GrowModalContext'
-import { Button, Modal, Box, Typography } from '@mui/material'
+import { Modal, Box } from '@mui/material'
+import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
 
 export default function Home() {
   const { state, dispatch } = useContext(ModalContext);
@@ -30,7 +31,7 @@ export default function Home() {
           </div>
             <p className={styles.headerText}>Unlock the world as <br />your <strong>talent pool</strong></p>
             <h3 className={styles.subTitle}>The Future of work is here</h3>
-          <button className={styles.heroBtn} onClick={() => dispatch({type: "CHANGE_MODAL"})}>Grow Your team</button>
+          <GrowYourTeam/>
           </div>
         </div>
         <div className={styles.valuePreposition}>
