@@ -1,8 +1,11 @@
+"use client"
+
 import React from 'react'
 import style from "../styles/Why.module.scss"
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaRegCheckCircle  } from "react-icons/fa";
+import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam';
 
 
 const page = () => {
@@ -15,7 +18,7 @@ const page = () => {
           </div>
           <h2 className={style.headerTitle}>Build your dream team</h2>
           <p className={style.headerText}>Access top-notch talent easily, reliably, and affordably</p>
-          <Link className={style.headerLink} href="">Grow your team</Link>
+          <GrowYourTeam/>
         </div>
         <div className={style.imgCover}>
           <Image src="/HeroImageCluster2.png" className={style.img} fill alt="Woman holding cup looking at Laptop"/>
