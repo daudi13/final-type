@@ -136,7 +136,7 @@ const page = () => {
           </div>
           <div className={style.infoBox}>
             <div className={style.content}>
-              <p className={style.textBox}>"Kariuki&apos;s the best tech support rep I&apos;ve ever hired. We&apos;ve tried people for this role in Eastern Europe — even in the UK — there&apos;s just no comparison. Clients love him.”</p>
+              <p className={style.textBox}>&quot;Kariuki&apos;s the best tech support rep I&apos;ve ever hired. We&apos;ve tried people for this role in Eastern Europe — even in the UK — there&apos;s just no comparison. Clients love him.&quot;</p>
               <p className={style.name}>Andrew Mukerjee</p>
               <span className={style.position}>Chief Executive Officer</span>
             </div>
