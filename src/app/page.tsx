@@ -1,12 +1,15 @@
 "use client"
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "./styles/Home.module.scss"
 import { data2, data, logos } from './data/data'
 import HappyCards from '@/components/happycards/HappyCards'
 import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
+import { ModalContext } from '@/context/GrowModalContext';
 
 export default function Home() {
+  const { dispatch } = React.useContext(ModalContext);
   return (
     <main className={styles.mainSection}>
       <div className={styles.heroSection}>
@@ -18,7 +21,7 @@ export default function Home() {
           </div>
             <p className={styles.headerText}>Unlock the world as <br />your <strong>talent pool</strong></p>
             <h3 className={styles.subTitle}>The Future of work is here</h3>
-          <GrowYourTeam/>
+          <GrowYourTeam text="Grow your team"/>
           </div>
         </div>
         <div className={styles.valuePreposition}>
@@ -69,7 +72,9 @@ export default function Home() {
                   <h3 className={styles.whyUsTitle}>{item.title}</h3>
                   <div className={styles.whyUsDash}></div>
                   <p className={styles.whyUsText}>{item.content}</p>
-                  <Link href={item.hrefLink} className={`${item.activeBtn ? styles.active : styles.btn}`}>{item.linkName}</Link>
+                  { item.hrefLink ? 
+                    <Link href={item.hrefLink} className={`${item.activeBtn ? styles.active : styles.btn}`}>{item.linkName}</Link> : item.growBtn
+                  }
                 </div>
                 <div className={styles.imageBox}>
                   <Image src={item.img} fill className={styles.imageCover} alt='item' />
@@ -86,7 +91,7 @@ export default function Home() {
           </div>
             <h3 className={styles.preFooterTitle}>Be a part of the movement</h3>
             <p className={styles.preFooterText}>Global equity starts with giving talented young people everywhere the chance to build meaningful careers.</p>
-            <Link href="" className={styles.joinBtn}>Join Us</Link>
+            <GrowYourTeam text="Join us"/>
           </div>
       </div>
       

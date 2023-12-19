@@ -1,9 +1,12 @@
+"use client"
+
 import React from 'react';
 import style from "../styles/How.module.scss";
 import Image from 'next/image';
 import Link from 'next/link';
 import { how } from '../data/data';
 import { FaRegCheckCircle  } from "react-icons/fa";
+import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam';
 
 const page = () => {
   return (
@@ -50,7 +53,7 @@ const page = () => {
             <p className={style.mainText}>welcome your new team members</p>
           </div>
         </div>
-        <Link href="" className={style.link}>Get started now</Link>
+        <div><GrowYourTeam text="Get started now" /></div>
       </div>
         <div className={style.whyUs}>
           {
@@ -122,7 +125,7 @@ const page = () => {
           <Image src="/Group113.png" alt='' fill className={style.img} />
         </div>
         <p className={style.text}>TripArc squashes 3x more software bugs</p>
-        <Link href="" className={style.link}>See client stories</Link>
+        <Link href="/success-stories" className={style.link}>See client stories</Link>
       </div>
       </div>
       <div className={style.prefooter}>
@@ -132,7 +135,7 @@ const page = () => {
             <Image src="/Shapes.png" fill  alt="" className={style.img} />
           </div>
           <p>More questions?</p>
-          <Link href="" className={style.link}>We have answers</Link>
+          <div><GrowYourTeam text="We have answers"/></div>
         </div>
       </div>
     </main>

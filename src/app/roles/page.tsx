@@ -1,8 +1,11 @@
+"use client"
+
 import React from 'react'
 import styles from '@/app/styles/Roles.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ourRoles } from '../data/data'
+import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
 
 const page = () => {
   return (
@@ -39,7 +42,7 @@ const page = () => {
                     )
                   )}
                 </div>
-                <Link href={item.getInTouchLink} className={styles.getInTouchLink}>Get in touch</Link>
+                <GrowYourTeam text='Get in touch'/>
               </div>
               <div className={styles.imageCoverPrimary}>
                 <Image fill src={item.primaryImage} alt="primary" className={styles.primaryImage} />

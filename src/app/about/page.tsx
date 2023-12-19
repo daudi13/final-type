@@ -2,6 +2,7 @@ import React from 'react'
 import style from '@/app/styles/About.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
+import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
 
 const page = () => {
   return (
@@ -51,7 +52,7 @@ const page = () => {
                 <p className={style.mainBoxInnerText}>Drive sustainable economic development</p>
               </div>
             </div>
-            <Link href="" className={style.joinUSBtn}>Join Us</Link>
+            <GrowYourTeam text="Join us"/>
           </div>
           <div className={style.imageCover}>
             <Image fill src='/peopleOncomputer.png' alt="people around a computer" className={style.peopleImage} />

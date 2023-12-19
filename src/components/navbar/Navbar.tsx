@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link className={styles.menuLinks} href="/meet-our-team">Meet Our Talents</Link>
           <Link className={styles.menuLinks} href="/about">About us</Link>
         </div>
-        <GrowYourTeam/>
+        <GrowYourTeam text='Grow your team'/>
       </div>
       {
         navActive && <div className={styles.dropDownItem}>

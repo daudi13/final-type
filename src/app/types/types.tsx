@@ -13,10 +13,11 @@ export type IData2 = {
   img: string,
   title: string,
   content: JSX.Element,
-  hrefLink: string,
+  hrefLink?: string,
   linkName: string,
   right: boolean,
   activeBtn: boolean
+  growBtn?: JSX.Element
 }[];
 
 export type ICards = {

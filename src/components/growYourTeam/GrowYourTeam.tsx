@@ -2,11 +2,14 @@ import React from 'react';
 import { ModalContext } from '@/context/GrowModalContext';
 import { makeStyles } from 'tss-react/mui'
 
+interface MyComponentsProps {
+  text: string
+}
 
-
-const GrowYourTeam = () => {
+const GrowYourTeam: React.FC<MyComponentsProps> = ({text}) => {
   const useStyle = makeStyles()(() => ({
     heroBtn: {
+      alignSelf: "flex-start",
       border: "none",
       fontSize: "16px",
       fontFamily: '"Open Sans", sans-serif',
@@ -22,7 +25,7 @@ const GrowYourTeam = () => {
   const { dispatch } = React.useContext(ModalContext);
 
   return (
-    <button className={classes.heroBtn} onClick={() => dispatch({type: "CHANGE_MODAL"})}>Grow Your team</button>
+    <button className={classes.heroBtn} onClick={() => dispatch({ type: "CHANGE_MODAL" })}>{text}</button>
   )
 }
 

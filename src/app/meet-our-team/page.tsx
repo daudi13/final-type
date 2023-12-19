@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -5,6 +7,7 @@ import styles from "../styles/Meet.module.scss"
 import { featuredProfiles, devTools, cards } from '../data/data'
 import { Open_Sans } from 'next/font/google';
 import HappyCards from '@/components/happycards/HappyCards'
+import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
 
 
 const openSans = Open_Sans({ subsets: ["latin"] });
@@ -119,7 +122,7 @@ const page = () => {
           <h3 className={styles.preFooterHeroHeader}>
             Build the team <br/> you&apos;ve always wanted
           </h3>
-          <Link href="/contact" className={styles.preFooterLinkBtn}>Get in touch</Link>
+          <GrowYourTeam text="Get in touch"/>
         </div>
       </div>
     </main>

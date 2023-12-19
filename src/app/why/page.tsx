@@ -18,7 +18,7 @@ const page = () => {
           </div>
           <h2 className={style.headerTitle}>Build your dream team</h2>
           <p className={style.headerText}>Access top-notch talent easily, reliably, and affordably</p>
-          <GrowYourTeam/>
+          <GrowYourTeam text='Grow your team'/>
         </div>
         <div className={style.imgCover}>
           <Image src="/HeroImageCluster2.png" className={style.img} fill alt="Woman holding cup looking at Laptop"/>
@@ -71,7 +71,7 @@ const page = () => {
               <li className={style.pointItem}>Experience in HTML/CSS, JavaScript, Python, and SQL</li>
               <li className={style.pointItem}>Excellent teamwork, communication attention to detail and critical thinking</li>
             </ul>
-            <Link href="" className={style.link}>Meet our Talent</Link>
+            <Link href="/meet-our-team" className={style.link}>Meet our Talent</Link>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@ const page = () => {
                 <p className={style.text}>We build community on the ground for long-term engagement and retention</p>
               </div>
             </div>
-            <Link href="" className={style.link}>How we make it happen</Link>
+            <Link href="/how" className={style.link}>How we make it happen</Link>
           </div>
           <div className={style.imageCover}>
             <Image className={style.img} src="/muhindi.png" fill alt='' />
@@ -144,7 +144,7 @@ const page = () => {
             <Image src="/Group110.png" alt='group icons' fill className={style.img} />
           </div>
             <h2 className={style.prefooterHeader}>Keep pace with the changing world of talent</h2>
-            <Link className={style.link} href="">Get in touch</Link>
+          <GrowYourTeam text="Get in touch"/>
         </div>
       </div>
     </main>

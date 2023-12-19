@@ -1,5 +1,6 @@
 import { group } from "console";
 import { ICards, IData, IData2, IDevTools, IFeaturedProfiles, ILogos, IAboutUs, ILinks, ISuccess, IMidSectionDate, IHow } from "../types/types";
+import GrowYourTeam from "@/components/growYourTeam/GrowYourTeam";
 
 export const success: ISuccess = [
   {
@@ -83,7 +84,7 @@ export const data2: IData2 = [
     img: '/SpiderGraph.png',
     title: "Quality you can count on",
     content: <p>Our intensive screening process admits <strong>only the top 2%</strong> of STEM graduates, assessed across technical skills, soft skills, and growth mindset</p>,
-    hrefLink: "",
+    hrefLink: "/why",
     linkName: "why Tana",
     right: true,
     activeBtn: false,
@@ -93,7 +94,7 @@ export const data2: IData2 = [
     img: "/OnlineInterview.png",
     title: "Full control over hiring",
     content: <p>We’ll present finalists to interview and <strong>you choose exactly who to bring onboard</strong> interview and you choose exactly who to bring onboard. Talent is 100% dedicated to you and fully embedded into your team</p>,
-    hrefLink: "",
+    hrefLink: "/how",
     linkName: "How it works",
     right: false,
     activeBtn: false,
@@ -103,7 +104,7 @@ export const data2: IData2 = [
     img: "/SlackConversation.png",
     title: "Hit the ground running",
     content: <p>We provide hands-on training in the fundamentals for the job & global business culture, so that your <strong>talent is ready to go on day one</strong>.</p>,
-    hrefLink: "",
+    hrefLink: "/roles",
     linkName: "Our roles",
     right: true,
     activeBtn: false,
@@ -113,7 +114,7 @@ export const data2: IData2 = [
     img: "/04_HRChecklist.png",
     title: "No admin, no stress",
     content: <p>We handle all the ins-and-outs of hiring abroad, <strong>so you can focus on building</strong></p>,
-    hrefLink: "",
+    growBtn: <GrowYourTeam text="Get started"/>,
     linkName: "Get Started",
     right: false,
     activeBtn: true,
