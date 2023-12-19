@@ -26,7 +26,9 @@ export default function RootLayout({
         <meta property="og:image" content="/Maskgroup.png" />
         <meta property="og:image:type" content="website" />
         <meta name="twitter:image" content="/muhindi.png" />
-        <meta name="twitter:image:type" content="twitter" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Welcome to Tana - QA and Data Analytics Recruitment" />
+        <meta name="twitter:description" content="Explore top-tier talent solutions, innovative recruitment processes, and opportunities for growth with Tana." />
       </head>
       <body className={inter.className}>
           <ThemeProvider>
