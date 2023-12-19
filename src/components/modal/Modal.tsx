@@ -2,7 +2,6 @@
 
 import React, { useContext, useState } from 'react';
 import { ModalContext } from '@/context/GrowModalContext'
-import { Modal, Box } from '@mui/material';
 import styles from "./page.module.scss";
 
 const ModalBox = () => {
@@ -17,14 +16,11 @@ const ModalBox = () => {
 
 
   return (
-        <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-        className={styles.modal}
+    <div
+      className={styles.modal}
+      onClick={handleClose}
       >
-        <Box className={styles.form}>
+        <div className={styles.form}>
           <form className={styles.contactForm}>
             <div className={styles.contactFormColumnRight}>
               <h2 className={styles.contactFormHeader}>We&apos;d love to hear from you!</h2>
@@ -75,8 +71,8 @@ const ModalBox = () => {
               </div>
             </div>
           </form>
-        </Box>
-      </Modal>
+        </div>
+      </div>
   )
 }
 
