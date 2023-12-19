@@ -18,23 +18,23 @@ const page = () => {
       </head>
       <div className={style.header}>
         <div className={style.imgCoverLeft}>
-          <Image src="/supervisor.png" alt='' fill className={style.img} />
+          <Image src="/supervisor.png" alt="it" fill className={style.img} />
         </div>
         <div className={style.imgCoverRight}>
-          <Image src="/muhindi.png" alt='' fill className={style.img} />
+          <Image src="/muhindi.png" alt="it" fill className={style.img} />
         </div>
         <div className={style.imgCoverSemi}>
-          <Image src="/Ellipse684.png" alt='' fill className={style.img} />
+          <Image src="/Ellipse684.png" alt="it" fill className={style.img} />
         </div>
         <div className={style.imgCoverRect}>
-          <Image src="/Rectangle81.png" alt='' fill className={style.img} />
+          <Image src="/Rectangle81.png" alt="it" fill className={style.img} />
         </div>
         <div className={style.imgCoverQuart}>
-          <Image src="/Ellipse685.png" alt='' fill className={style.img} />
+          <Image src="/Ellipse685.png" alt="it" fill className={style.img} />
         </div>
         <div className={style.heroText}>
           <div className={style.imgCover}>
-          <Image src="/Group113.png" alt='' fill className={style.img} />
+          <Image src="/Group113.png" alt="it" fill className={style.img} />
           </div>
           <h1 className={style.heroTitle}>Talent you can Trust</h1>
           <p className={style.heroText}>
@@ -91,43 +91,43 @@ const page = () => {
         <div className={style.inner}>
           <div className={style.reasonsUpper}>
             <div className={style.imgCover}>
-              <Image src="/Shapes.png" fill  alt="" className={style.img} />
+              <Image src="/Shapes.png" fill  alt="it" className={style.img} />
             </div>
             <p className={style.text}>Whatever you need we've got you</p>
           </div>
           <div className={style.midBox}>
             <div className={style.midBoxSec}>
               <div className={style.imgCover}>
-                <Image src="/IconBackground.png" fill  alt="" className={style.img} />
+                <Image src="/IconBackground.png" fill  alt="it" className={style.img} />
               </div>
               <p className={style.title}>No compromises</p>
               <p className={style.text}>Stay on Budget without sacrifucing quality</p>
             </div>
             <div className={style.midBoxSec}>
               <div className={style.imgCover}>
-                <Image src="/IconBackground2.png" fill  alt="" className={style.img} />
+                <Image src="/IconBackground2.png" fill  alt="it" className={style.img} />
               </div>
               <p className={style.title}>No Surprises</p>
               <p className={style.text}>We deliver reliably — every person, every time</p>
             </div>
             <div className={style.midBoxSec}>
               <div className={style.imgCover}>
-                <Image src="/IconBackground3.png" fill  alt="" className={style.img} />
+                <Image src="/IconBackground3.png" fill  alt="it" className={style.img} />
               </div>
               <p className={style.title}>No Stress</p>
               <p className={style.text}>End-to-end support. We’re in this with you</p>
             </div>
           </div>
-            <Link href="" className={style.link}>What makes us special</Link>
+            <Link href="/why" className={style.link}>What makes us special</Link>
         </div>
       </div>
       <div className={style.funFactSection}>
         <div className={style.imgCover}>
-          <Image src="/Image.png" fill className={style.img} alt='' />
+          <Image src="/Image.png" fill className={style.img} alt="it" />
         </div>
       <div className={style.textField}>
         <div className={style.iconCover}>
-          <Image src="/Group113.png" alt='' fill className={style.img} />
+          <Image src="/Group113.png" alt="it" fill className={style.img} />
         </div>
         <p className={style.text}>TripArc squashes 3x more software bugs</p>
         <Link href="/success-stories" className={style.link}>See client stories</Link>
@@ -137,7 +137,7 @@ const page = () => {
         <div className={style.prefooterOverlay}></div>
         <div className={style.midBody}>
           <div className={style.imgCover}>
-            <Image src="/Shapes.png" fill  alt="" className={style.img} />
+            <Image src="/Shapes.png" fill  alt="it" className={style.img} />
           </div>
           <p>More questions?</p>
           <div><GrowYourTeam text="We have answers"/></div>

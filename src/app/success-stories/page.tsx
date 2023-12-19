@@ -69,7 +69,7 @@ const page = () => {
           <Image src="/Group110.png" className={style.img} fill alt="alt" />
         </div>
         <h2 className={style.prefooterTitle}>Learn how Tana can <br/> help you go further, faster</h2>
-        <Link href="" className={style.linkBtn}>Get in touch</Link>
+        <Link href="/contact" className={style.linkBtn}>Get in touch</Link>
       </div>
     </main>
   )

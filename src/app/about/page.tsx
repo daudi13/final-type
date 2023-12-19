@@ -32,7 +32,7 @@ const page = () => {
         <div className={style.imgCover}>
           <Image fill src='/Frame4018.png' alt="frame4018" />
         </div>
-        <Link href="" className={style.meetTalentLink}>Meet our Talent</Link>
+        <Link href="/meet-our-team" className={style.meetTalentLink}>Meet our Talent</Link>
       </div>
       <div className={style.paradigmShift}>
         <div className={style.paradigmShiftWrapper}>

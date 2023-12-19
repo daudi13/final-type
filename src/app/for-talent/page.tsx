@@ -1,12 +1,11 @@
 
-import Head from 'next/head'
+"use client"
 import style from '../styles/ForTalent.module.scss'
 import { midSectionDate } from '../data/data'
 import { Archivo, Open_Sans } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
-import groupVector from "/Group111.png";
-import testimonial from '/testimonial.png'
+import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
 
 const archivo = Archivo({ subsets: ['latin'] });
 const openSans = Open_Sans({ subsets: ['latin'] });
@@ -36,7 +35,7 @@ const page = () => {
         <h2 className={style.postHeaderSectionText}>
           Tana connects <span className={style.highlighted}>brilliant young Africans</span> to remote roles with global companies
         </h2>
-        <Link href="" className={style.linkBtn}>Apply now</Link>
+        <div><GrowYourTeam text='Get Connected'/></div>
       </div>
       <div className={style.midSection}>
         {
@@ -48,7 +47,7 @@ const page = () => {
                 <>{item.content}</>
               </div>
               <div className={style.imgCover}>
-                <Image alt='' fill className={style.itemSectionImage} src={item.img}/>
+                <Image alt="it" fill className={style.itemSectionImage} src={item.img}/>
               </div>
             </div>
           )
@@ -58,7 +57,7 @@ const page = () => {
       </div>
       <div className={style.cardTestimonial}>
         <div className={style.testimonialCard}>
-          <Image src='/testimonial.png' fill alt='' className={style.img} />
+          <Image src='/testimonial.png' fill alt="it" className={style.img} />
         </div>
       </div>
       <div className={style.preFooter}>
@@ -68,7 +67,7 @@ const page = () => {
             <Image src="/Group111.png" fill className={style.img} alt='lt' />
           </div>
           <h2 className={style.preFooterHeader}>There's a world of possibilities out there</h2>
-          <Link href="" className={style.linkBtn}>Get Connected</Link>
+          <div><GrowYourTeam text="Get Connected"/></div>
         </div>
       </div>
     </main>

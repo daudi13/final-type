@@ -13,7 +13,7 @@ const page = () => {
       <div className={style.headerSection}>
         <div className={style.headerText}>
           <div className={style.imageCover}>
-            <Image src="/Group113.png" className={style.img} fill alt="" />
+            <Image src="/Group113.png" className={style.img} fill alt="it" />
           </div>
           <h1 className={style.headerTitle}>Privacy Policy</h1>
           <span className={style.lastUpdated}>Last updated: September 1, 2023</span>

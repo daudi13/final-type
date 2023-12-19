@@ -91,7 +91,7 @@ export default function Home() {
           </div>
             <h3 className={styles.preFooterTitle}>Be a part of the movement</h3>
             <p className={styles.preFooterText}>Global equity starts with giving talented young people everywhere the chance to build meaningful careers.</p>
-            <GrowYourTeam text="Join us"/>
+            <div><GrowYourTeam text="Join us"/></div>
           </div>
       </div>
       

@@ -35,7 +35,7 @@ const page = () => {
         <div className={styles.imageBoxTwo}>
           <Image src="/network.png" fill  alt="networkImage"className={styles.heroImage} />
         </div>
-        <div className={styles.imageBoxThree}>Meet Our Team, Tana team, QA recruitment team, Data Analytics recruitment team, expertise, passion, commitment, excellence, innovation, client satisfaction
+        <div className={styles.imageBoxThree}>
           <Image src="/Ellipse711.png" fill alt="cornerImage" className={styles.heroCornerImage} />
         </div>
 

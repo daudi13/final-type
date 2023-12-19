@@ -65,7 +65,7 @@ const page = () => {
       <div className={style.boxSection}>
         <div className={style.boxSectionInner}>
           <div className={style.imageCover}>
-            <Image src="/Maskgroup.png" alt="" fill className={style.img} />
+            <Image src="/Maskgroup.png" alt="it" fill className={style.img} />
           </div>
           <div className={style.textSection}>
             <h2 className={style.innerHeader}>Our anything-but-typical talent profile</h2>
@@ -86,7 +86,7 @@ const page = () => {
           <div className={style.uniqueBox}>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <Image src="/badge.png" className={style.img} fill alt=""/>
+                <Image src="/badge.png" className={style.img} fill alt="it"/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Commitment to excellence</p>
@@ -95,7 +95,7 @@ const page = () => {
             </div>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <Image src="/lifeline.png" className={style.img} fill alt=""/>
+                <Image src="/lifeline.png" className={style.img} fill alt="it"/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Your needs, your way</p>
@@ -104,7 +104,7 @@ const page = () => {
             </div>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <Image src="/messagecode.png" className={style.img} fill alt=""/>
+                <Image src="/messagecode.png" className={style.img} fill alt="it"/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Seamless collaboration</p>
@@ -113,7 +113,7 @@ const page = () => {
             </div>
             <div className={style.pointSection}>
               <div className={style.iconBox} style={{ backgroundColor: "#c5e2ee", borderRadius: "10px"}}>
-                <Image src="/cloud-add.svg" className={style.img} fill alt=""/>
+                <Image src="/cloud-add.svg" className={style.img} fill alt="it"/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Lighter than light touch</p>
@@ -122,7 +122,7 @@ const page = () => {
             </div>
             <div className={style.pointSection}>
               <div className={style.iconBox}>
-                <Image src="/badge.png" className={style.img} fill alt=""/>
+                <Image src="/badge.png" className={style.img} fill alt="it"/>
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Culture that transcends borders</p>
@@ -132,7 +132,7 @@ const page = () => {
             <Link href="/how" className={style.link}>How we make it happen</Link>
           </div>
           <div className={style.imageCover}>
-            <Image className={style.img} src="/muhindi.png" fill alt='' />
+            <Image className={style.img} src="/muhindi.png" fill alt="it" />
           </div>
           <div className={style.infoBox}>
             <div className={style.content}>
