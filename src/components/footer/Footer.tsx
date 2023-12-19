@@ -56,8 +56,8 @@ const Footer = () => {
         </div>
         <div className={styles.footerBottomSection}>
           <div className={styles.footerBottomSocials}>
-            <Link href="/" className={styles.footerBottomSocialLinks}><FaLinkedin/></Link>
-            <Link href="/" className={styles.footerBottomSocialLinks}><FaTwitter /></Link>
+            <Link href="https://www.linkedin.com/in/david-owour-ouma/" className={styles.footerBottomSocialLinks}><FaLinkedin/></Link>
+            <Link href="https://twitter.com/davouma" className={styles.footerBottomSocialLinks}><FaTwitter /></Link>
           </div>
           <div className={styles.footerBottomSectionLinks}>
             <ul className={styles.sectionLinks}>
