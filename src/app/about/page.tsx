@@ -37,7 +37,7 @@ const page = () => {
       <div className={style.paradigmShift}>
         <div className={style.paradigmShiftWrapper}>
           <div className={style.mainBox}>
-            <h2 className={style.mainBoxHeader}>It's time for <br/> a paradigm shift</h2>
+            <h2 className={style.mainBoxHeader}>It&apos;s time for <br/> a paradigm shift</h2>
             <div className={style.mainBoxMainDesc}>
               <div className={style.mainBoxInner}>
                 <div className={style.iconCover}>

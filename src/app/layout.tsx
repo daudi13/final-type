@@ -22,10 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        //OG
         <meta property="og:image" content="/Maskgroup.png" />
         <meta property="og:image:type" content="website" />
-        // twitter card
         <meta name="twitter:image" content="/muhindi.png" />
         <meta name="twitter:image:type" content="twitter" />
       </head>

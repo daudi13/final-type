@@ -208,16 +208,18 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            justify-content: center;
-            align-items: center;
 
             .pointBox{
               display: flex;
+              justify-content: center;
               gap: 20px;
 
+              .checkMark{
+                font-size: 30px;
+              }
 
               .pointText{
-                width: 100%;
+                flex: 1;
               }
             }
           }

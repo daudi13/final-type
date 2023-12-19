@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import style from "../styles/Privacy.module.scss"
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -17,7 +18,7 @@ const page = () => {
           </div>
           <h1 className={style.headerTitle}>Privacy Policy</h1>
           <span className={style.lastUpdated}>Last updated: September 1, 2023</span>
-          <p className={style.headerDesc}>This Privacy Policy describes how Tana collects, uses, and shares your personal information when you visit [www.tanatech.io] (the "Website"). Please read this Privacy Policy carefully before using the Website.</p>
+          <p className={style.headerDesc}>This Privacy Policy describes how Tana collects, uses, and shares your personal information when you visit <Link href="www.tanatech.io">This website</Link>. Please read this Privacy Policy carefully before using the Website.</p>
         </div>
       </div>
       <div className={style.bodySection}>
@@ -49,9 +50,8 @@ const page = () => {
           <li><p>To improve our website and services</p></li>
           <li><p>To analyze user behaviour and preferences</p></li>
         </ul>
-
         <h3 className={style.bodySectionSubTitle}>Cookies and Similar Technologies</h3>
-        <p>Our website may use cookies and similar technologies to enhance your experience. Cookies are small data files stored on your device that help us improve the website's functionality and your interaction with it. You can adjust your browser settings to refuse cookies when cookies are being sent</p>
+        <p>Our website may use cookies and similar technologies to enhance your experience. Cookies are small data files stored on your device that help us improve the website&apos;s functionality and your interaction with it. You can adjust your browser settings to refuse cookies when cookies are being sent</p>
         <h3 className={style.bodySectionSubTitle}>Sharing your information</h3>
           <p>
             We do not sell, trade, or rent your personal information to third parties, we may share your information with trusted service providers who help us operate the website and deliver services to you. These providers are bound by confidentiality agreements and are not permitted to use your information for their own purposes.
@@ -70,10 +70,10 @@ const page = () => {
           <li><p>Opt out of reciving marketing communications from us</p></li>
           <li><p>Request the deletion of your personal information</p></li>
         </ul>
-          <h3 className={style.bodySectionSubTitle}>Children's Privacy</h3>
+          <h3 className={style.bodySectionSubTitle}>Children&apos;s Privacy</h3>
           <p>Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadertently collected information from a child, please contact us so we can remove the information</p>
         <h3 className={style.bodySectionSubTitle}>Changes to this privacy Policy</h3>
-        <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated "Last updated" date</p>
+        <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated &quot;Last updated&quot; date</p>
         <h3 className={style.bodySectionSubTitle}>Contact Us</h3>
         <p>If you have any questions about these Terms and Conditions, You can contact us: By email: hello@tanatech.io <br/> By using our website, you consent to the terms of this privacy policy.
         </p>

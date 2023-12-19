@@ -73,7 +73,7 @@ const page = () => {
                     {
                       item.points.map((point, index) => (
                         <div className={style.pointBox} key={index}>
-                          <FaRegCheckCircle size={30} />
+                          <FaRegCheckCircle className={style.checkMark} />
                           <p className={style.pointText}>{point}</p>
                         </div>
                     ))
@@ -93,7 +93,7 @@ const page = () => {
             <div className={style.imgCover}>
               <Image src="/Shapes.png" fill  alt="it" className={style.img} />
             </div>
-            <p className={style.text}>Whatever you need we've got you</p>
+            <p className={style.text}>Whatever you need we&apos;ve got you</p>
           </div>
           <div className={style.midBox}>
             <div className={style.midBoxSec}>

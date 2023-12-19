@@ -66,7 +66,7 @@ const page = () => {
           <div className={style.imgContainer}>
             <Image src="/Group111.png" fill className={style.img} alt='lt' />
           </div>
-          <h2 className={style.preFooterHeader}>There's a world of possibilities out there</h2>
+          <h2 className={style.preFooterHeader}>There&apos;s a world of possibilities out there</h2>
           <div><GrowYourTeam text="Get Connected"/></div>
         </div>
       </div>

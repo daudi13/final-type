@@ -319,23 +319,20 @@ export const how: IHow = [
   {
     title: "Meanwhile, Tana is...",
     img: "/hijabi.png",
-    points: [<p>Sourcing bright, driven graduates from <strong>top STEM programs</strong></p>, <p>Running candidates through a <strong>five-stage assessment process</strong> to screen for tech fundamentals, communication, curiosity, problem-solving, self-motivation, adaptability, and much, much more</p>, <p>
-      Finding the right matches for <strong>your requirements & culture</strong></p>],
+    points: ["Sourcing bright, driven graduates from top STEM programs", "Running candidates through a five-stage assessment process to screen for tech fundamentals, communication, curiosity, problem-solving, self-motivation, adaptability, and much, much more",
+    "Finding the right matches for your requirements & culture"],
     right: true
   },
   {
     title: "Meanwhile, Tana is...",
     img: "/pink.png",
-    points: [<p>Equipping your incoming team members to succeed with a pre-deployment bootcamp that covers <strong>core requirements of the job, professional skills, and global business norms</strong></p>, <p>Handling
-      <strong>contracts, payroll, tax, and compliance</strong> in-country</p>, <p>
-      Finding the right matches for <strong>your requirements & culture</strong></p>],
+    points: ["Equipping your incoming team members to succeed with a pre-deployment bootcamp that covers core requirements of the job, professional skills, and global business norms", "Handling contracts, payroll, tax, and compliance in-country", "Finding the right matches for your requirements & culture"],
     right: false
   },
   {
     title: "Meanwhile, Tana is...",
     img: "/talk.png",
-    points: [<p>Driving strong performance with an <strong>on-the-ground team lead</strong></p>, <p>Helping your team members overcome challenges and upskill on the job through <strong>our network of technical mentors</strong></p>, <p>
-      Fostering <strong>strong morale & community</strong> on the ground through Tana happy hours, workshops, and in-person get-togethers</p>],
+    points: ["Driving strong performance with an on-the-ground team lead", "Helping your team members overcome challenges and upskill on the job through our network of technical mentors", "Fostering strong morale & community on the ground through Tana happy hours, workshops, and in-person get-togethers"],
     right: true
   },
 ]

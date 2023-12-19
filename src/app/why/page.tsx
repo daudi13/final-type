@@ -90,7 +90,7 @@ const page = () => {
               </div>
               <div className={style.textSection}>
                 <p className={style.title}>Commitment to excellence</p>
-                <p className={style.text}>Only the top 2% of applicants pass Tana’s rigorous screening and interview process</p>
+                <p className={style.text}>Only the top 2% of applicants pass Tana&apos;s rigorous screening and interview process</p>
               </div>
             </div>
             <div className={style.pointSection}>
@@ -136,7 +136,7 @@ const page = () => {
           </div>
           <div className={style.infoBox}>
             <div className={style.content}>
-              <p className={style.textBox}>"Kariuki’s the best tech support rep I’ve ever hired. We’ve tried people for this role in Eastern Europe — even in the UK — there’s just no comparison. Clients love him.”</p>
+              <p className={style.textBox}>"Kariuki&apos;s the best tech support rep I&apos;ve ever hired. We&apos;ve tried people for this role in Eastern Europe — even in the UK — there&apos;s just no comparison. Clients love him.”</p>
               <p className={style.name}>Andrew Mukerjee</p>
               <span className={style.position}>Chief Executive Officer</span>
             </div>

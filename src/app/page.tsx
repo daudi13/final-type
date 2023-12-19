@@ -6,10 +6,8 @@ import styles from "./styles/Home.module.scss"
 import { data2, data, logos } from './data/data'
 import HappyCards from '@/components/happycards/HappyCards'
 import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
-import { ModalContext } from '@/context/GrowModalContext';
 
 export default function Home() {
-  const { dispatch } = React.useContext(ModalContext);
   return (
     <main className={styles.mainSection}>
       <div className={styles.heroSection}>
@@ -56,8 +54,8 @@ export default function Home() {
           <div className={styles.logos}>
             {
             logos.map((logo, index) => (
-                <div className={styles.imageBox}>
-                  <Image src={logo} key={index} fill className={styles.logoImg} alt="img" />
+                <div className={styles.imageBox} key={index}>
+                  <Image src={logo} fill className={styles.logoImg} alt="img" />
                 </div>
               ))
             }
