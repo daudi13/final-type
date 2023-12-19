@@ -12,7 +12,16 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Welcome to Tana',
   description: 'Welcome to Tana - Your Trusted Partner in Quality Assurance (QA) and Data Analytics Recruitment. Explore top-tier talent solutions, innovative recruitment processes, and opportunities for growth in the dynamic fields of QA and Data Analytics.',
-  keywords: "Tana, QA recruitment, Data Analytics recruitment, top-tier talent solutions, innovative recruitment, growth opportunities"
+  keywords: "Tana, QA recruitment, Data Analytics recruitment, top-tier talent solutions, innovative recruitment, growth opportunities",
+    twitter: {
+    card: 'summary_large_image',
+    title: 'Tana',
+    description: 'Welcome to Tana - Your Trusted Partner in Quality Assurance (QA) and Data Analytics Recruitment. Explore top-tier talent solutions, innovative recruitment processes, and opportunities for growth in the dynamic fields of QA and Data Analytics.',
+    siteId: '1467726470533754880',
+      creator: 'David Ouma',
+    creatorId: '1467726470533754880',
+    images: ['/muhindi.png'],
+  },
 };
 
 export default function RootLayout({
