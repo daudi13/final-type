@@ -11,6 +11,11 @@ import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam';
 const page = () => {
   return (
     <main>
+      <head>
+        <title>Why us</title>
+        <meta name="description" content='Discover why Tana is your preferred partner in Quality Assurance (QA) and Data Analytics recruitment. Explore the unique benefits of choosing Tana, from our industry expertise and commitment to innovation to our client-centric approach. Find out why businesses and professionals trust Tana for top-tier talent solutions in QA and Data Analytics.'/>
+        <meta name="keyword" content='Why Us, Tana advantages, QA recruitment, Data Analytics recruitment, industry expertise, innovation, client-centric, top-tier talent solutions, trust'/>
+      </head>
       <div className={style.header}>
         <div className={style.headerText}>
           <div className={style.iconCover}>

@@ -15,6 +15,11 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 const page = () => {
   return (
     <main>
+      <head>
+        <title>Meet our Team</title>
+        <meta name="description" content="Get to know the dedicated professionals at Tana - your trusted team in Quality Assurance (QA) and Data Analytics recruitment. Learn about the expertise, passion, and commitment of our team members who work tirelessly to connect businesses with top-tier talent and uphold Tana's values of excellence, innovation, and client satisfaction."/>
+        <meta name="keyword" content="Meet Our Team, Tana team, QA recruitment team, Data Analytics recruitment team, expertise, passion, commitment, excellence, innovation, client satisfaction"/>
+      </head>
       <div className={styles.heroSection}>
         <div className={styles.heroTextSection}>
           <div className={styles.imageCover}>
@@ -30,7 +35,7 @@ const page = () => {
         <div className={styles.imageBoxTwo}>
           <Image src="/network.png" fill  alt="networkImage"className={styles.heroImage} />
         </div>
-        <div className={styles.imageBoxThree}>
+        <div className={styles.imageBoxThree}>Meet Our Team, Tana team, QA recruitment team, Data Analytics recruitment team, expertise, passion, commitment, excellence, innovation, client satisfaction
           <Image src="/Ellipse711.png" fill alt="cornerImage" className={styles.heroCornerImage} />
         </div>
 

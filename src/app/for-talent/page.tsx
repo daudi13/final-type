@@ -1,8 +1,10 @@
-import Link from 'next/link'
+
+import Head from 'next/head'
 import style from '../styles/ForTalent.module.scss'
 import { midSectionDate } from '../data/data'
 import { Archivo, Open_Sans } from 'next/font/google'
 import Image from 'next/image'
+import Link from 'next/link'
 import groupVector from "/Group111.png";
 import testimonial from '/testimonial.png'
 
@@ -14,6 +16,11 @@ const openSans = Open_Sans({ subsets: ['latin'] });
 const page = () => {
   return (
     <main className={`${archivo.className} ${openSans.className}`}>
+      <head>
+        <title>Tana Talent</title>
+        <meta name="description" content='Explore opportunities with Tana - your gateway to exciting careers in Quality Assurance (QA) and Data Analytics. Learn about our commitment to supporting your professional growth, connecting you with leading businesses, and providing a platform for your success in QA and Data Analytics careers.'/>
+        <meta name="keyword" content='For Talent, Tana careers, QA careers, Data Analytics careers, professional growth, job opportunities, leading businesses, success in QA, success in Data Analytics'/>
+      </head>
       <div className={style.headerSection}>
         <div className={style.headerSectionText}>
           <div className={style.headerText}>

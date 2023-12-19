@@ -5,6 +5,11 @@ import Image from 'next/image';
 const page = () => {
   return (
     <main className={style.container}>
+      <head>
+        <title>Tana's terms and condition</title>
+        <meta name="description" content='Read and understand the terms and conditions with Tana - your trusted partner in Quality Assurance (QA) and Data Analytics recruitment. Explore our terms of service to ensure clarity on the use of our website, services, and the responsibilities associated with engaging with Tana in the fields of QA and Data Analytics.'/>
+        <meta name="keyword" content='Terms and Conditions, Tana terms of service, QA recruitment terms, Data Analytics recruitment terms, website usage, service terms, responsibilities'/>
+      </head>
       <div className={style.headerSection}>
         <div className={style.headerText}>
           <div className={style.imageCover}>

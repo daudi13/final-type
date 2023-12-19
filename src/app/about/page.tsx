@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import Head from 'next/head'
 import style from '@/app/styles/About.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,6 +8,11 @@ import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
 const page = () => {
   return (
     <main>
+      <head>
+        <title>About Tana</title>
+        <meta name="description" content='Discover the essence of Tana - your trusted partner in Quality Assurance (QA) and Data Analytics recruitment. Learn about our mission to connect businesses with top-tier talent, our commitment to expertise and innovation, and the core values that define our client-centric approach. Explore the world of Tana and unlock opportunities for growth and success in QA and Data Analytics.'/>
+        <meta name="keyword" content='QA analysis'/>
+      </head>
       <div className={style.heroSection}>
         <div className={style.heroSectionText}>
           <h1 className={style.heroText}>Welcome to the future of Work</h1>

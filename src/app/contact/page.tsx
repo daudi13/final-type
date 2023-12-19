@@ -1,4 +1,5 @@
 "use client"
+import Head from 'next/head';
 import React, {useState} from 'react'
 import style from '../styles/Contact.module.scss';
 import Image from 'next/image';
@@ -9,11 +10,14 @@ const ContactPage = () => {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  console.log(firstName)
-
 
   return (
     <main>
+      <head>
+        <title>Contact Tana</title>
+        <meta name="description" content='Get in touch with Tana - your trusted partner in Quality Assurance (QA) and Data Analytics recruitment. Contact us for inquiries, partnership opportunities, or to discuss your hiring needs. Our team is dedicated to providing top-notch service and finding the best talent for your QA and Data Analytics positions.'/>
+        <meta name="keyword" content='Tana, Quality Assurance, QA, Data Analytics, recruitment, talent, expertise, innovation, client-centric, growth, success'/>
+      </head>
       <div className={style.heroSection}>
         <div className={style.personVector}>
           <Image fill className={style.img} src='/personquart.png' alt="header vectors"/>

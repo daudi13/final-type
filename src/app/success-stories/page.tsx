@@ -14,6 +14,11 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 const page = () => {
   return (
     <main className={`${archivo.className} ${openSans.className}`}>
+      <head>
+        <title>Success stories</title>
+        <meta name="description" content='Discover success stories with Tana - your partner in Quality Assurance (QA) and Data Analytics recruitment. Explore testimonials from businesses and individuals who have experienced growth, innovation, and achievement through our top-tier talent solutions in QA and Data Analytics.'/>
+        <meta name="keyword" content='Success Stories, Tana testimonials, QA success stories, Data Analytics success stories, growth, innovation, achievement, talent solutions, top-tier talent'/>
+      </head>
       <div className={style.headerSection}>
         <div className={style.headerTextSection}>
           <div className={style.imageCover}>

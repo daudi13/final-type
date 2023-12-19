@@ -9,7 +9,12 @@ import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam'
 
 const page = () => {
   return (
-        <main>
+    <main>
+      <head>
+        <title>Roles</title>
+        <meta name="description" content='Explore exciting roles with Tana - your gateway to fulfilling careers in Quality Assurance (QA) and Data Analytics. Browse our current job openings and discover opportunities to join top-tier businesses, grow your skills, and make a meaningful impact in the dynamic fields of QA and Data Analytics.'/>
+        <meta name="keyword" content='Roles, Tana job openings, QA roles, Data Analytics roles, careers, skills development, impactful roles, job opportunities, top-tier businesses'/>
+      </head>
       <div className={styles.heroSection}>
         <div className={styles.heroTextSection}>
           <div className={styles.imageGroupCover}>

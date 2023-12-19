@@ -1,5 +1,5 @@
 "use client"
-
+import Head from 'next/head';
 import React from 'react';
 import style from "../styles/How.module.scss";
 import Image from 'next/image';
@@ -11,6 +11,11 @@ import GrowYourTeam from '@/components/growYourTeam/GrowYourTeam';
 const page = () => {
   return (
     <main>
+      <head>
+        <title>How it works</title>
+        <meta name="description" content='Discover how Tana works - your go-to partner in Quality Assurance (QA) and Data Analytics recruitment. Learn about our streamlined process for connecting businesses with top-tier talent, our commitment to efficiency and transparency, and the steps involved in finding the perfect match for QA and Data Analytics positions.'/>
+        <meta name="keyword" content='How It Works, Tana process, QA recruitment process, Data Analytics recruitment process, talent matching, efficiency, transparency, perfect match in QA, perfect match in Data Analytics'/>
+      </head>
       <div className={style.header}>
         <div className={style.imgCoverLeft}>
           <Image src="/supervisor.png" alt='' fill className={style.img} />

@@ -4,7 +4,12 @@ import style from "../styles/Privacy.module.scss"
 
 const page = () => {
   return (
-        <main className={style.container}>
+    <main className={style.container}>
+      <head>
+        <title>Tana Privacy policy</title>
+        <meta name="description" content="Learn about Tana's commitment to your privacy - your trusted partner in Quality Assurance (QA) and Data Analytics recruitment. Explore our Privacy Policy to understand how we handle and protect your personal information, ensuring transparency, security, and compliance with privacy regulations."/>
+        <meta name="keyword" content="Privacy Policy, Tana privacy, QA recruitment privacy, Data Analytics recruitment privacy, personal information, transparency, security, privacy regulations compliance"/>
+      </head>
       <div className={style.headerSection}>
         <div className={style.headerText}>
           <div className={style.imageCover}>
