@@ -10,7 +10,7 @@ const GrowYourTeam: React.FC<MyComponentsProps> = ({text}) => {
 
   return (
     <button onClick={() => dispatch({ type: "CHANGE_MODAL" })} style={{
-      border: "none", padding: "13px 32px", borderRadius: "30px", color: "#fff", backgroundColor: "0DAAD5", fontWeight: "700"}}>{text}</button>
+      border: "none", padding: "13px 32px", borderRadius: "30px", color: "#ffffff", backgroundColor: "#0DAAD5", fontWeight: "700"}}>{text}</button>
   )
 }
 
